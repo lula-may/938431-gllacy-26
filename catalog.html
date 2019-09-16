@@ -18,7 +18,15 @@
            alt="Логотип Глейси">
         </a>
         <ul>
-          <li><a href="catalog.html">Каталог</a></li>
+          <li>Каталог
+            <ul>
+              <li><a href="#"><strong>Новинки</strong></a></li>
+              <li><a href="catalog.html">Сливочное</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
+            </ul>
+          </li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О Компании</a></li>
         </ul>
@@ -168,26 +176,10 @@
     <footer>
       <div>
         <ul>
-          <li>
-            <a href="#" aria-label="Глейси в Твиттере">
-              <img src="img/twitter.svg" width="39" height="39" alt="Логотип Твиттера">
-            </a>
-          </li>
-          <li>
-            <a href="#" aria-label="Глейси в Инстаграм">
-              <img src="img/instagram.svg" width="39" height="39" alt="Логотип Инстаграм">
-            </a>
-          </li>
-          <li>
-            <a href="#" aria-label="Глейси в Фейсбуке">
-              <img src="img/fb.svg" width="39" height="39" alt="Логотип Фейсбук">
-            </a>
-          </li>
-          <li>
-            <a href="#" aria-label="Глейси во Вконтакте">
-              <img src="img/vk.svg" width="39" height="39" alt="Логотип Вконтакте">
-            </a>
-          </li>
+          <li><a href="#" aria-label="Глейси в Твиттере">Твиттер</a></li>
+          <li><a href="#" aria-label="Глейси в Инстаграм">Инстаграм</a></li>
+          <li><a href="#" aria-label="Глейси в Фейсбуке">Фейсбук</a></li>
+          <li><a href="#" aria-label="Глейси во Вконтакте">Вконтакте</a></li>
         </ul>
       </div>
       <div>
@@ -209,30 +201,15 @@
       </div>
     </footer>
 
-    <!-- Выпадающее меню Каталог -->
-    <section>
-      <h3 class="visually-hidden">Каталог</h1>
-      <ul>
-        <li><a href="#"><strong>Новинки</strong></a></li>
-        <li><a href="catalog.html">Сливочное</a></li>
-        <li><a href="#">Щербеты</a></li>
-        <li><a href="#">Фруктовый лед</a></li>
-        <li><a href="#">Мелорин</a></li>
-      </ul>
-    </section>
-
     <!-- Поле поиска -->
-    <section>
-      <h3 class="visually-hidden">Поле поиска</h3>
       <form action="https://echo.htmlacademy.ru" method="get">
         <label class="visually-hidden" for="search-field">Что ищем?</label>
         <input id="search-field" type="text" name="search" placeholder="Крем-брюле">
       </form>
-    </section>
 
     <!-- Окно входа -->
-    <section>
-      <h3 class="visually-hidden">Окно входа</h3>
+    <div>
+      <h4 class="visually-hidden">Окно входа</h4>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label class="visually-hidden" for="login-field">Ваш логин:</label>
@@ -246,11 +223,11 @@
       </form>
       <a href="#">Забыли пароль?</a>
       <a href="#">Новая регистрация</a>
-    </section>
+    </div>
 
     <!-- Корзина -->
     <section>
-      <h3 class="visually-hidden">Окно корзины</h3>
+      <h4 class="visually-hidden">Окно корзины</h4>
       <table>
         <tr>
           <td><button type="button" aria-label="Убрать из корзины">X</button></td>
@@ -267,7 +244,7 @@
           <td>450 руб.</td>
         </tr>
       </table>
-      <p>Итого: 750 руб.</p>
+      <p><b>Итого: 750 руб.</b></p>
       <button type="button">Оформить заказ</button>
     </section>
   </body>
