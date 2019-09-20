@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation > li > a {
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.site-navigation > li > a:hover,
+.site-navigation > li > a:focus {
+  background-color: #f7f6f3;
+  color: #323232;
+}
+
+.site-navigation > li > a:active {
+  background-color: #ededed;
+}
+
+.site-navigation > .current > a,
+.site-navigation > .current > a:hover,
+.site-navigation > .current > a:focus,
+.site-navigation > .current > a:active {
+  background-color: #d07058;
+  color: #ffffff;
+}
+
+.user-navigation .button {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+}
+
+.user-navigation .button:hover,
+.user-navigation .button:focus {
+  color: #323232;
+  background-color: #f8f7f4;
+}
+
+.features {
+  color: #323232;
+
+  background-image: url(../img/bg-waffle.jpg);
+  background-position: 0 0;
+  background-repeat: repeat;
+
+}
+
+.features h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.features ul {
+  list-style: none;
+}
+
+.news {
+  color: #323232;
+
+  min-height: 220px;
+  background-image: url(../img/bg-strawberry.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.news h2 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.news a {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #323232;
+}
+
+.news a:hover,
+.news a:focus,
+.news a:active {
+  color: #e84d37;
+  text-decoration: underline;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+.main-footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.info a {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.copyright a {
+  font-size: 12px;
+  line-height: 18px;
+}
