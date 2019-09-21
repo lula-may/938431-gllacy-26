@@ -58,6 +58,12 @@ body {
   background-color: #f8f7f4;
 }
 
+.user-navigation .basket-not-empty {
+  color: #323232;
+
+  background-color: #f7f6f3;
+}
+
 .main-page .button {
   font-size: 32px;
   line-height: 44px;
@@ -153,6 +159,12 @@ body {
   color: #ffffff;
   text-decoration: none;
 }
+
+.main-footer a:hover,
+.main-footer a:focus,
+.main-footer a:active {
+  color: #ffbc9e;
+}
 .info a {
   font-size: 13px;
   line-height: 18px;
@@ -166,3 +178,84 @@ body {
   font-size: 12px;
   line-height: 18px;
 }
+
+
+.inner-page h1 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+}
+
+.inner-page ul {
+  list-style: none;
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus,
+.breadcrumbs a:active {
+  color: #ffbc9e;
+}
+
+.contacts-info{
+  text-align: right;
+}
+
+.contacts-info .working-hours {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+.contacts-info .phone {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.catalog-item:hover,
+.catalog-item:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4)
+}
+
+.catalog-item a {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.catalog-item a:hover,
+.catalog-item a:focus,
+.catalog-item a:active {
+  color: #ffbc9e;
+}
+
+.catalog-item .price-info {
+  font-weight: bold;
+
+}
+
+.price-info .rubles {
+  font-size: 45px;
+  line-height: 45px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.price-info .kilo {
+  font-size: 30px;
+  line-height: 45px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
