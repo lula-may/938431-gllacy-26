@@ -3,19 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <!-- Фон поставлен, чтобы были видны белые логотипы -->
-    <style>
-      body {background-color: lightgrey;}
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic"
+     rel="stylesheet">
+     <link href="css/normalize.css" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <nav>
-        <img src="img/logo.svg" width="155" height="64"
+    <header class="main-header">
+      <nav class="main-navigation">
+        <img class="main-header-logo" src="img/logo.svg" width="155" height="64"
            alt="Логотип Глейси">
-        <ul>
+        <ul class="site-navigation">
           <li><a href="catalog.html">Каталог</a>
-            <ul>
+            <!-- Подменю временно скрыто -->
+            <ul style="display: none;">
               <li><a href="#"><strong>Новинки</strong></a></li>
               <li><a href="catalog.html">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
@@ -26,18 +27,18 @@
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О Компании</a></li>
         </ul>
-        <ul>
-          <li><button type="button">Поиск по сайту</button></li>
-          <li><button type="button">Вход</button></li>
-          <li><a href="#">Корзина<span>Пусто</span></a></li>
+        <ul class="user-navigation">
+          <li><button class="button search" type="button">Поиск по сайту</button></li>
+          <li><button class="button login" type="button">Вход</button></li>
+          <li><a class="button basket basket-empty" href="#">Корзина<span>Пусто</span></a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <main class="main-page">
       <h1 class="visually-hidden">Глейси Шоп</h1>
-      <!--блок с промо акциями и образцами мороженого -->
-      <section>
+      <!--Временно скрыт блок с промо акциями и образцами мороженого -->
+      <section style="display: none;">
         <p>С 10 до 20, ежедневно<br>
           8 812 450-25-25
         </p>
@@ -70,7 +71,8 @@
           </li>
         </ul>
       </section>
-      <section>
+
+      <section style="display: none;">
         <h2 class="visually-hidden">Акции</h2>
           <div>
             <h3>Малинка даром!</h3>
@@ -88,7 +90,9 @@
           <button type="button">Хочу шоколадки!</button>
         </div>
     </section>
-      <section>
+
+    <!-- Временно скрыт блок с хитами -->
+      <section style="display: none;">
         <h2 class="visually-hidden">Наши хиты</h2>
         <ul>
           <li>
@@ -133,10 +137,10 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2 class="visually-hidden">Наши преимущества</h2>
-        <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже
-           мороженого собственного производства на развес</p>
+      <!-- Блок с преимуществами -->
+      <section class="features">
+        <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже
+           мороженого собственного производства на развес</h3>
         <ul>
           <li>
             <p>Все наше мороженое изготавливается на собственном
@@ -168,28 +172,32 @@
           </li>
         </ul>
       </section>
-
-      <section>
+      <!--Блок новостей  -->
+      <section class="news">
         <h2>Новое в нашем блоге</h2>
         <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </section>
 
-      <section>
-        <h2>Подписка на рассылку</h2>
-        <p>
-          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
-          всего самого вкусного, что у нас происходит. Обещаем
-          не спамить и не слать всякой ненужной ерунды. Честно =)
-        </p>
+      <!--Подписка на рассылку  -->
+      <section class="subscription">
+        <div class="container">
+          <h2 class="visually-hidden">Подписка на рассылку</h2>
+          <p>
+            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
+            всего самого вкусного, что у нас происходит. Обещаем
+            не спамить и не слать всякой ненужной ерунды. Честно =)
+          </p>
+        </div>
+
         <!-- форма для подписки на рассылку -->
         <form action="https://echo.htmlacademy.ru" method="post">
-          <label for="email-field">Ваш email:</label>
+          <label class="visually-hidden" for="email-field">Ваш email:</label>
           <input id="email-field" type="text" name="email" value="" placeholder="Электронная почта">
-          <button type="submit">Отправить</button>
+          <button class="button" type="submit">Отправить</button>
         </form>
       </section>
-      <!-- блок с картой -->
-      <section>
+      <!--Временно скрыт блок с картой -->
+      <section style="display: none;">
         <h2>Как нас найти</h2>
         <img src="img/map.png" width="1200" height="640"
         alt="Глейси Шоп на карте">
@@ -207,8 +215,8 @@
       </section>
     </main>
 
-    <footer>
-      <div>
+    <footer class="main-footer">
+      <div class="social">
         <ul>
           <li><a href="#" aria-label="Глейси в Твиттере">Твиттер</a></li>
           <li><a href="#" aria-label="Глейси в Инстаграм">Инстаграм</a></li>
@@ -217,14 +225,14 @@
         </ul>
       </div>
       <div>
-        <ul>
-          <li>С любовью<a href="#"> Для поставщиков</a></li>
+        <ul class="info">
+          <li>С любовью<a href="#"><b>Для поставщиков</b></a></li>
           <li><a href="#">О производстве</a></li>
           <li><a href="#">Наши документы</a></li>
           <li><a href="#">Экологические стандарты</a></li>
         </ul>
       </div>
-      <div>
+      <div class="copyright">
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmlacademy.svg" width="110" height="40"
            alt="Логотип htmlacademy">
@@ -235,14 +243,14 @@
       </div>
     </footer>
 
-    <!-- Поле поиска -->
-      <form action="https://echo.htmlacademy.ru" method="get">
+    <!-- Временно скрыто Поле поиска -->
+      <form style="display: none;" action="https://echo.htmlacademy.ru" method="get">
         <label class="visually-hidden" for="search-field">Что ищем?</label>
         <input id="search-field" type="text" name="search" placeholder="Крем-брюле">
       </form>
 
-    <!-- Окно входа -->
-    <div>
+    <!-- Временно скрыто Окно входа -->
+    <div style="display: none;">
       <h4 class="visually-hidden">Окно входа</h4>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
@@ -259,8 +267,8 @@
       <a href="#">Новая регистрация</a>
     </div>
 
-    <!-- Форма обратной связи -->
-    <div>
+    <!-- Временно скрыто Форма обратной связи -->
+    <div style="display: none;">
       <h4>Мы обязательно вам ответим!</h4>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>

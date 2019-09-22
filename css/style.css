@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation > li > a {
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.site-navigation > li > a:hover,
+.site-navigation > li > a:focus {
+  background-color: #f7f6f3;
+  color: #323232;
+}
+
+.site-navigation > li > a:active {
+  background-color: #ededed;
+}
+
+.site-navigation > .current > a,
+.site-navigation > .current > a:hover,
+.site-navigation > .current > a:focus,
+.site-navigation > .current > a:active {
+  background-color: #d07058;
+  color: #ffffff;
+}
+
+.user-navigation .button {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+
+  border: none;
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+}
+
+.user-navigation .button:hover,
+.user-navigation .button:focus {
+  color: #323232;
+  background-color: #f8f7f4;
+}
+
+.user-navigation .basket-not-empty {
+  color: #323232;
+
+  background-color: #f7f6f3;
+}
+
+.main-page .button {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: bold;
+  color: #ffffff;
+
+  border: none;
+  background-color: #f06341;
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76)
+
+}
+
+.main-page .button:hover,
+.main-page .button:focus {
+  background-color: #f38167;
+}
+
+.main-page .button:active {
+  background-color: #d94934;
+}
+
+.features {
+  color: #323232;
+
+  background-image: url(../img/bg-waffle.jpg);
+  background-position: 0 0;
+  background-repeat: repeat;
+
+}
+
+.features h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.features ul {
+  list-style: none;
+}
+
+.news {
+  color: #323232;
+
+  min-height: 220px;
+  background-color: #ffffff;
+  background-image: url(../img/bg-strawberry.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.news h2 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.news a {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #323232;
+}
+
+.news a:hover,
+.news a:focus,
+.news a:active {
+  color: #e84d37;
+  text-decoration: underline;
+}
+
+.subscription {
+  min-height: 220px;
+
+  background-image: url(../img/bg-post.svg);
+  background-repeat: no-repeat;
+  background-color: #f8f7f4;
+}
+
+.subscription .container {
+  background-color: #f8f7f4;
+}
+
+.subscription p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #5a5a5a;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+.main-footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-footer a:hover,
+.main-footer a:focus,
+.main-footer a:active {
+  color: #ffbc9e;
+}
+.info a {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.info b {
+  font-weight: bold;
+}
+
+.copyright a {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+
+.inner-page h1 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+}
+
+.inner-page ul {
+  list-style: none;
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus,
+.breadcrumbs a:active {
+  color: #ffbc9e;
+}
+
+.contacts-info{
+  text-align: right;
+}
+
+.contacts-info .working-hours {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+.contacts-info .phone {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.catalog-item:hover,
+.catalog-item:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4)
+}
+
+.catalog-item a {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.catalog-item a:hover,
+.catalog-item a:focus,
+.catalog-item a:active {
+  color: #ffbc9e;
+}
+
+.catalog-item .price-info {
+  font-weight: bold;
+
+}
+
+.price-info .rubles {
+  font-size: 45px;
+  line-height: 45px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.price-info .kilo {
+  font-size: 30px;
+  line-height: 45px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
