@@ -7,7 +7,7 @@ body {
   line-height: 22px;
   color: #ffffff;
 
-  background-color: #849d8f;
+ background-color: #849d8f;
 }
 
 .site-navigation,
@@ -88,7 +88,7 @@ body {
 .features {
   color: #323232;
 
-  background-image: url(../img/bg-waffle.jpg);
+  /* background-image: url("../img/bg-waffle.jpg"); */
   background-position: 0 0;
   background-repeat: repeat;
 
@@ -109,7 +109,7 @@ body {
 
   min-height: 220px;
   background-color: #ffffff;
-  background-image: url(../img/bg-strawberry.jpg);
+  background-image: url("../img/bg-strawberry.jpg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -259,3 +259,125 @@ body {
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
+/* Стили для сетки */
+
+body {
+  /* Временно для сетки */
+  background-color: transparent;
+  background-image: url(../img/gllacy-index.jpg);
+  background-size: 1200px 2416px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  min-height: 2416px;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+
+.main-header {
+  /* Временно для сетки */
+  min-height: 73px;
+  margin-bottom: 1204px;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+    /* Временно для сетки */
+    min-height: 73px;
+}
+
+.main-header-logo {
+  width: 156px;
+  height: 63px;
+  padding-top: 10px;
+}
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+    /* Временно для сетки */
+    min-height: 53px;
+}
+
+.site-navigation {
+  width: 705px;
+
+}
+
+.user-navigation {
+  width: 245px;
+  margin-left: auto;
+}
+
+.features {
+  padding: 27px 20px;
+  margin-bottom:40px;
+  /* Временно для сетки */
+  min-height: 250px;
+}
+
+.features h3 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+  /* Временно для сетки */
+  min-height: 60px;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-column {
+  margin: 0;
+  padding: 0;
+  width: 540px;
+    /* Временно для сетки */
+    min-height: 187px;
+}
+
+.news-and-subscription {
+  margin-bottom: 468px;
+}
+.news,
+.subscription {
+  width: 560px;
+    /* Временно для сетки */
+    min-height: 222px;
+    background: none;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+    /* Временно для сетки */
+    min-height: 104px;
+}
+
+.main-footer .social {
+  width: 267px;
+    /* Временно для сетки */
+    min-height: 104px;
+}
+
+.main-footer .info {
+  margin: 0;
+  padding: 0;
+  width: 560px;
+    /* Временно для сетки */
+    min-height: 104px;
+}
+
+.main-footer .copyright {
+  width: 267px;
+    /* Временно для сетки */
+    min-height: 104px;
+}
