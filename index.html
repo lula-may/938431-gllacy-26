@@ -7,7 +7,6 @@
      rel="stylesheet">
      <link href="css/normalize.css" rel="stylesheet">
      <link href="css/style.css" rel="stylesheet">
-     <link href="css/outline.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header container">
@@ -16,39 +15,30 @@
           alt="Логотип Глейси">
         </a>
         <ul class="site-navigation">
-      <!--
           <li><a href="catalog.html">Каталог</a>
-          -->
             <!-- Подменю временно скрыто -->
             <ul style="display: none;">
-                <li><a href="#"><strong>Новинки</strong></a></li>
-                <li><a href="catalog.html">Сливочное</a></li>
-                <li><a href="#">Щербеты</a></li>
-                <li><a href="#">Фруктовый лед</a></li>
-                <li><a href="#">Мелорин</a></li>
-              </ul>
-              <!--
-            </li>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">О Компании</a></li>
-                      -->
-
-          </ul>
-          <ul class="user-navigation">
-              <!--
-            <li><button class="button search" type="button">Поиск по сайту</button></li>
-            <li><button class="button login" type="button">Вход</button></li>
-            <li><a class="button basket basket-empty" href="#">Корзина<span>Пусто</span></a></li>
-               -->
-              </ul>
-              </nav>
-
+              <li><a href="#"><strong>Новинки</strong></a></li>
+              <li><a href="catalog.html">Сливочное</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">О Компании</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li><button class="button search" type="button">Поиск по сайту</button></li>
+          <li><button class="button login" type="button">Вход</button></li>
+          <li><a class="button basket basket-empty" href="#">Корзина<span>Пусто</span></a></li>
+        </ul>
+      </nav>
     </header>
-      <main class="main-page container">
-<!--
-      <h1 class="visually-hidden">Глейси Шоп</h1>
 
- -->
+    <main class="main-page container">
+      <!-- <h1 class="visually-hidden">Глейси Шоп</h1> -->
+
       <!--Временно скрыт блок с промо акциями и образцами мороженого -->
       <section style="display: none;">
         <p>С 10 до 20, ежедневно<br>
@@ -155,7 +145,6 @@
               мороженого собственного производства на развес</h3>
           <div class="columns">
             <ul class="feature-column">
-              <!--
               <li>
                 <p>Все наше мороженое изготавливается на собственном
                     производстве, с использованием современного оборудования
@@ -170,11 +159,8 @@
                     экологически чистого сырья.
                 </p>
               </li>
-
-                -->
             </ul>
             <ul class="feature-column">
-              <!--
               <li>
                 <p>
                   Закупка ингредиентов  производится только у проверенных
@@ -189,7 +175,6 @@
                   растаять в пути и позволяет сохранить превосходный вкус.
                 </p>
               </li>
-                -->
             </ul>
         </section>
       </div>
@@ -197,37 +182,28 @@
       <div class="news-and-subscription columns">
       <!--Блок новостей  -->
         <section class="news">
-      <!--
         <h2>Новое в нашем блоге</h2>
         <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-        -->
         </section>
-
 
         <!--Подписка на рассылку  -->
         <section class="subscription">
-        <!--
-          <div class="container">
-            <h2 class="visually-hidden">Подписка на рассылку</h2>
+          <div class="wrapper">
+            <!-- <h2 class="visually-hidden">Подписка на рассылку</h2> -->
             <p>
               Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
               всего самого вкусного, что у нас происходит. Обещаем
               не спамить и не слать всякой ненужной ерунды. Честно =)
             </p>
+          <!-- форма для подписки на рассылку -->
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <label class="visually-hidden" for="email-field">Ваш email:</label>
+              <input id="email-field" type="text" name="email" value="" placeholder="Электронная почта">
+              <button class="button" type="submit">Отправить</button>
+            </form>
           </div>
 
-          -->
-
-          <!-- форма для подписки на рассылку -->
-          <!--
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden" for="email-field">Ваш email:</label>
-            <input id="email-field" type="text" name="email" value="" placeholder="Электронная почта">
-            <button class="button" type="submit">Отправить</button>
-          </form>
-            -->
         </section>
-
       </div>
 
       <!--Временно скрыт блок с картой -->
@@ -251,25 +227,20 @@
 
     <footer class="main-footer container">
       <div class="social">
-       <!--
         <ul>
           <li><a href="#" aria-label="Глейси в Твиттере">Твиттер</a></li>
           <li><a href="#" aria-label="Глейси в Инстаграм">Инстаграм</a></li>
           <li><a href="#" aria-label="Глейси в Фейсбуке">Фейсбук</a></li>
           <li><a href="#" aria-label="Глейси во Вконтакте">Вконтакте</a></li>
         </ul>
-        -->
       </div>
       <ul class="info">
-       <!--
           <li>С любовью<a href="#"><b>Для поставщиков</b></a></li>
           <li><a href="#">О производстве</a></li>
           <li><a href="#">Наши документы</a></li>
           <li><a href="#">Экологические стандарты</a></li>
-        -->
       </ul>
       <div class="copyright">
-       <!--
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmlacademy.svg" width="110" height="40"
            alt="Логотип htmlacademy">
@@ -278,9 +249,7 @@
           Сделано в<a href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy</a> © 2019
         </p>
       </div>
-        -->
       </footer>
-
 
     <!-- Временно скрыто Поле поиска -->
       <form style="display: none;" action="https://echo.htmlacademy.ru" method="get">
