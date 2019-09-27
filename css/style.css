@@ -218,7 +218,7 @@ body {
 
 .contacts-info .phone {
   font-size: 22px;
-  line-height: 24px;
+  line-height: 28px;
   font-weight: bold;
 }
 
@@ -271,6 +271,17 @@ body {
   min-height: 2416px;
 }
 
+.catalog-page {
+    /* Временно для сетки */
+    background-color: transparent;
+    background-image: url(../img/gllacy-catalog.jpg);
+    background-size: 1200px 1650px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 1650px;
+
+}
+
 .container {
   box-sizing: border-box;
   width: 1200px;
@@ -282,6 +293,11 @@ body {
   /* Временно для сетки */
   min-height: 73px;
   margin-bottom: 1204px;
+}
+
+.catalog-page .main-header {
+  /* Временно для сетки */
+  margin-bottom: 0;
 }
 
 .main-navigation {
@@ -308,12 +324,21 @@ body {
 
 .site-navigation {
   width: 705px;
+}
 
+.catalog-page .site-navigation {
+  margin-left: 10px;
+  width: 690px;
 }
 
 .user-navigation {
   width: 245px;
   margin-left: auto;
+}
+
+.catalog-page .user-navigation {
+  width: 267px;
+  margin-left: 25px;
 }
 
 .features {
@@ -381,3 +406,59 @@ body {
     /* Временно для сетки */
     min-height: 104px;
 }
+
+.inner-page {
+  /* Временно для сетки */
+  box-sizing: border-box;
+  min-height: 1470px;
+}
+
+.inner-page h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.inner-page .inner-main-top {
+   /* Временно для сетки */
+  min-height: 90px;
+  margin-bottom: 195x;
+
+}
+
+.contacts-info {
+  margin: 0;
+  padding: 0;
+  margin-top: -4px;
+  self-align: top;
+}
+
+.inner-page .catalog {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+   /* Временно для сетки */
+   min-height: 1050px;
+}
+
+.catalog-item {
+  width: 267px;
+  /* height: 323px; */
+  margin-right: 26px;
+  margin-bottom: 40px;
+}
+
+.catalog-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.catalog-item h3 {
+  margin: 0;
+  padding: 0;
+}
+.catalog-item p {
+  margin: 0;
+  padding: 0;
+}
+
