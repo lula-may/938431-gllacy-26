@@ -22,10 +22,19 @@ display: flex;
 justify-content: space-between;
 }
 
+.catalog-page .main-navigation {
+  justify-content: flex-start;
+}
+
 .main-header-logo {
   width: 156px;
   height: 63px;
   padding-top: 10px;
+  margin-right: 20px;
+}
+
+.catalog-page .main-header-logo {
+  margin-right: 10px;
 }
 
 .site-navigation,
@@ -41,7 +50,6 @@ justify-content: space-between;
 }
 
 .catalog-page .site-navigation {
-  margin-left: 10px;
   width: 690px;
 }
 
@@ -227,59 +235,9 @@ justify-content: space-between;
   color: #5a5a5a;
 }
 
-.main-footer {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 35px;
-}
+/* Стили для страницы каталога */
 
-.main-footer ul {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-.main-footer a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.main-footer a:hover,
-.main-footer a:focus,
-.main-footer a:active {
-  color: #ffbc9e;
-}
-
-.main-footer .social {
-  width: 267px;
-}
-
-.main-footer .info {
-  margin: 0;
-  padding: 0;
-  width: 560px;
-}
-
-.main-footer .copyright {
-  width: 267px;
-}
-
-.info a {
-  font-size: 13px;
-  line-height: 18px;
-}
-
-.info b {
-  font-weight: bold;
-}
-
-.copyright a {
-  font-size: 12px;
-  line-height: 18px;
-}
-
-
-.inner-page h1 {
+.catalog-content h1 {
   margin: 0;
   padding: 0;
 
@@ -288,7 +246,7 @@ justify-content: space-between;
   font-weight: bold;
 }
 
-.inner-page ul {
+.catalog-content ul {
   list-style: none;
 }
 
@@ -329,7 +287,7 @@ justify-content: space-between;
   font-weight: bold;
 }
 
-.inner-page .catalog {
+.catalog-content .catalog {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -339,7 +297,6 @@ justify-content: space-between;
 
 .catalog-item {
   width: 267px;
-  /* height: 323px; */
   margin-right: 26px;
   margin-bottom: 40px;
 }
@@ -394,6 +351,60 @@ justify-content: space-between;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
+/* Стили для подвала */
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.main-footer ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+.main-footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-footer a:hover,
+.main-footer a:focus,
+.main-footer a:active {
+  color: #ffbc9e;
+}
+
+.main-footer .social {
+  width: 267px;
+}
+
+.main-footer .info {
+  margin: 0;
+  padding: 0;
+  width: 560px;
+}
+
+.main-footer .copyright {
+  width: 267px;
+}
+
+.info a {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.info b {
+  font-weight: bold;
+}
+
+.copyright a {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+
 /* Стили для сетки */
 
 body {
@@ -404,7 +415,8 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   min-height: 2416px;
-*/}
+  */
+}
 
 .catalog-page {
     /* Временно для сетки
@@ -422,12 +434,12 @@ body {
   /* Временно для сетки
   min-height: 73px;
   margin-bottom: 1204px;
-}
+*/}
 
 .catalog-page .main-header {
-  /* Временно для сетки
-  margin-bottom: 0;
-  */}
+  /* Временно для сетки */
+  /* margin-bottom: 0; */
+  }
 
 .main-navigation {
     /* Временно для сетки */
@@ -444,7 +456,7 @@ body {
 
 .features {
   /* Временно для сетки */
-  /* min-height: 250px; */
+   /* min-height: 250px; */
 }
 
 .features h3 {
@@ -454,12 +466,12 @@ body {
 
   .feature-column {
     /* Временно для сетки */
-    /* min-height: 187px; */
+     /* min-height: 187px; */
 }
 
 .news-and-subscription {
     /* Временно для сетки */
-    /* margin-bottom: 468px; */
+     /* margin-bottom: 468px; */
 }
 .news,
 .subscription {
