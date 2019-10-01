@@ -269,22 +269,21 @@ justify-content: space-between;
 .contacts-info{
   margin: 0;
   padding: 0;
-  margin-top: -4px;
-  self-align: top;
+  /* margin-top: -4px; */
+  align-self: flex-start;
 
+  font-weight: bold;
   text-align: right;
 }
 
 .contacts-info .working-hours {
   font-size: 14px;
   line-height: 16px;
-  font-weight: bold;
 }
 
 .contacts-info .phone {
   font-size: 22px;
   line-height: 28px;
-  font-weight: bold;
 }
 
 .catalog-content .catalog {
@@ -342,13 +341,13 @@ justify-content: space-between;
 .price-info .rubles {
   font-size: 45px;
   line-height: 45px;
-  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+  text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
 }
 
 .price-info .kilo {
   font-size: 30px;
   line-height: 45px;
-  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+  text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
 }
 
 /* Стили для подвала */
@@ -500,14 +499,14 @@ body {
      min-height: 104px; */
 }
 
-.inner-page {
+.catalog-content {
   /* Временно для сетки
    box-sizing: border-box;
    min-height: 1470px; */
 }
 
 
-.inner-page .inner-main-top {
+.catalog-main-top {
    /* Временно для сетки
    min-height: 90px;
    margin-bottom: 195x; */
@@ -515,7 +514,7 @@ body {
 }
 
 
-.inner-page .catalog {
+.catalog-page .catalog {
    /* Временно для сетки */
    /* min-height: 1050px; */
 }
