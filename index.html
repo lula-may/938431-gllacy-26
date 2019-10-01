@@ -7,12 +7,14 @@
      rel="stylesheet">
      <link href="css/normalize.css" rel="stylesheet">
      <link href="css/style.css" rel="stylesheet">
+     <link href="css/outline.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header container">
       <nav class="main-navigation">
-        <img class="main-header-logo" src="img/logo.svg" width="155" height="64"
-           alt="Логотип Глейси">
+        <a class="main-header-logo"><img src="img/logo.svg" width="155" height="63"
+          alt="Логотип Глейси">
+        </a>
         <ul class="site-navigation">
           <li><a href="catalog.html">Каталог</a>
             <!-- Подменю временно скрыто -->
@@ -35,8 +37,9 @@
       </nav>
     </header>
 
-    <main class="main-page">
-      <h1 class="visually-hidden">Глейси Шоп</h1>
+    <main class="main-page container">
+      <!-- <h1 class="visually-hidden">Глейси Шоп</h1> -->
+
       <!--Временно скрыт блок с промо акциями и образцами мороженого -->
       <section style="display: none;">
         <p>С 10 до 20, ежедневно<br>
@@ -82,6 +85,7 @@
             </p>
             <button type="button">Хочу варенье!</button>
           </div>
+          <div>
           <h3>Шоколадки даром!</h3>
           <p>
             При покупке 2 кг пломбира, добавим в ваш заказ упаковку
@@ -89,7 +93,7 @@
           </p>
           <button type="button">Хочу шоколадки!</button>
         </div>
-    </section>
+      </section>
 
     <!-- Временно скрыт блок с хитами -->
       <section style="display: none;">
@@ -138,64 +142,71 @@
         </ul>
       </section>
       <!-- Блок с преимуществами -->
-      <section class="features">
-        <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже
-           мороженого собственного производства на развес</h3>
-        <ul>
-          <li>
-            <p>Все наше мороженое изготавливается на собственном
-               производстве, с использованием современного оборудования
-               и проверенных временем технологий.
-            </p>
-          </li>
-          <li>
-            <p>
-              Для приготовления мороженого используются настоящие
-               сливки и молоко высочайшего качества. Все дополнительные
-               ингредиенты и добавки произведены из натурального,
-               экологически чистого сырья.
-            </p>
-          </li>
-          <li>
-            <p>
-              Закупка ингредиентов  производится только у проверенных
-              фермерских хозяйств и компаний, с которыми нас связывает
-              долговременное сотрудничество.
-            </p>
-          </li>
-          <li>
-            <p>
-              Доставка нашего мороженого до заказчиков осуществляется
-              в специальном термопаке, который не дает мороженому
-              растаять в пути и позволяет сохранить превосходный вкус.
-            </p>
-          </li>
-        </ul>
-      </section>
+        <section class="features">
+          <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже
+              мороженого собственного производства на развес</h3>
+          <div class="columns">
+            <ul class="feature-column">
+              <li>
+                <p>Все наше мороженое изготавливается на собственном
+                    производстве, с использованием современного оборудования
+                    и проверенных временем технологий.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Для приготовления мороженого используются настоящие
+                    сливки и молоко высочайшего качества. Все дополнительные
+                    ингредиенты и добавки произведены из натурального,
+                    экологически чистого сырья.
+                </p>
+              </li>
+            </ul>
+            <ul class="feature-column">
+              <li>
+                <p>
+                  Закупка ингредиентов  производится только у проверенных
+                  фермерских хозяйств и компаний, с которыми нас связывает
+                  долговременное сотрудничество.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Доставка нашего мороженого до заказчиков осуществляется
+                  в специальном термопаке, который не дает мороженому
+                  растаять в пути и позволяет сохранить превосходный вкус.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      <div class="news-and-subscription columns">
       <!--Блок новостей  -->
-      <section class="news">
+        <section class="news">
         <h2>Новое в нашем блоге</h2>
         <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-      </section>
+        </section>
 
-      <!--Подписка на рассылку  -->
-      <section class="subscription">
-        <div class="container">
-          <h2 class="visually-hidden">Подписка на рассылку</h2>
-          <p>
-            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
-            всего самого вкусного, что у нас происходит. Обещаем
-            не спамить и не слать всякой ненужной ерунды. Честно =)
-          </p>
-        </div>
+        <!--Подписка на рассылку  -->
+        <section class="subscription">
+          <div class="wrapper">
+            <!-- <h2 class="visually-hidden">Подписка на рассылку</h2> -->
+            <p>
+              Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
+              всего самого вкусного, что у нас происходит. Обещаем
+              не спамить и не слать всякой ненужной ерунды. Честно =)
+            </p>
+          <!-- форма для подписки на рассылку -->
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <label class="visually-hidden" for="email-field">Ваш email:</label>
+              <input id="email-field" type="text" name="email" value="" placeholder="Электронная почта">
+              <button class="button" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
+      </div>
 
-        <!-- форма для подписки на рассылку -->
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="email-field">Ваш email:</label>
-          <input id="email-field" type="text" name="email" value="" placeholder="Электронная почта">
-          <button class="button" type="submit">Отправить</button>
-        </form>
-      </section>
       <!--Временно скрыт блок с картой -->
       <section style="display: none;">
         <h2>Как нас найти</h2>
@@ -215,7 +226,7 @@
       </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <div class="social">
         <ul>
           <li><a href="#" aria-label="Глейси в Твиттере">Твиттер</a></li>
@@ -224,14 +235,12 @@
           <li><a href="#" aria-label="Глейси во Вконтакте">Вконтакте</a></li>
         </ul>
       </div>
-      <div>
-        <ul class="info">
+      <ul class="info">
           <li>С любовью<a href="#"><b>Для поставщиков</b></a></li>
           <li><a href="#">О производстве</a></li>
           <li><a href="#">Наши документы</a></li>
           <li><a href="#">Экологические стандарты</a></li>
-        </ul>
-      </div>
+      </ul>
       <div class="copyright">
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmlacademy.svg" width="110" height="40"
@@ -241,7 +250,7 @@
           Сделано в<a href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy</a> © 2019
         </p>
       </div>
-    </footer>
+      </footer>
 
     <!-- Временно скрыто Поле поиска -->
       <form style="display: none;" action="https://echo.htmlacademy.ru" method="get">
@@ -259,7 +268,7 @@
         </p>
         <p>
           <label class="visually-hidden" for="password-field">Ваш пароль:</label>
-          <input id="login-field" type="password" name="password" placeholder="Пароль">
+          <input id="password-field" type="password" name="password" placeholder="Пароль">
         </p>
         <button type="submit">Войти</button>
       </form>

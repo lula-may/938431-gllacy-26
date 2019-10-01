@@ -7,13 +7,52 @@ body {
   line-height: 22px;
   color: #ffffff;
 
-  background-color: #849d8f;
+ background-color: #849d8f;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+
+.main-navigation {
+display: flex;
+justify-content: space-between;
+}
+
+.catalog-page .main-navigation {
+  justify-content: flex-start;
+}
+
+.main-header-logo {
+  width: 156px;
+  height: 63px;
+  padding-top: 10px;
+  margin-right: 20px;
+}
+
+.catalog-page .main-header-logo {
+  margin-right: 10px;
 }
 
 .site-navigation,
 .user-navigation {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
+
+.site-navigation {
+  width: 705px;
+}
+
+.catalog-page .site-navigation {
+  width: 690px;
+}
+
 
 .site-navigation > li > a {
   color: #ffffff;
@@ -38,6 +77,16 @@ body {
 .site-navigation > .current > a:active {
   background-color: #d07058;
   color: #ffffff;
+}
+
+.user-navigation {
+  width: 245px;
+  margin-left: auto;
+}
+
+.catalog-page .user-navigation {
+  width: 267px;
+  margin-left: 25px;
 }
 
 .user-navigation .button {
@@ -85,23 +134,48 @@ body {
   background-color: #d94934;
 }
 
+
 .features {
+  padding: 27px 20px;
+  margin-bottom:40px;
+
   color: #323232;
 
-  background-image: url(../img/bg-waffle.jpg);
+  border-radius: 15px;
+  background-image: url("../img/bg-waffle.jpg");
   background-position: 0 0;
   background-repeat: repeat;
-
 }
 
 .features h3 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
 }
 
+.columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-column {
+  margin: 0;
+  padding: 0;
+  width: 540px;
+}
+
 .features ul {
   list-style: none;
+}
+
+.news,
+.subscription {
+  width: 560px;
+  border-radius: 15px;
 }
 
 .news {
@@ -109,7 +183,7 @@ body {
 
   min-height: 220px;
   background-color: #ffffff;
-  background-image: url(../img/bg-strawberry.jpg);
+  background-image: url("../img/bg-strawberry.jpg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -135,58 +209,44 @@ body {
 }
 
 .subscription {
-  min-height: 220px;
+  padding: 5px;
+  min-height: 210px;
 
   background-image: url(../img/bg-post.svg);
+  background-position: top center;
   background-repeat: no-repeat;
+  background-size: cover;
   background-color: #f8f7f4;
 }
 
-.subscription .container {
+.subscription .wrapper {
+  min-height: 210px;
+
+  border-radius: 10px;
   background-color: #f8f7f4;
 }
 
 .subscription p {
+  margin: 0;
+  padding: 0;
+
   font-size: 16px;
   line-height: 22px;
   color: #5a5a5a;
 }
 
-.main-footer ul {
-  list-style: none;
-}
-.main-footer a {
-  color: #ffffff;
-  text-decoration: none;
-}
+/* Стили для страницы каталога */
 
-.main-footer a:hover,
-.main-footer a:focus,
-.main-footer a:active {
-  color: #ffbc9e;
-}
-.info a {
-  font-size: 13px;
-  line-height: 18px;
-}
+.catalog-content h1 {
+  margin: 0;
+  padding: 0;
 
-.info b {
-  font-weight: bold;
-}
-
-.copyright a {
-  font-size: 12px;
-  line-height: 18px;
-}
-
-
-.inner-page h1 {
   font-size: 35px;
   line-height: 41px;
   font-weight: bold;
 }
 
-.inner-page ul {
+.catalog-content ul {
   list-style: none;
 }
 
@@ -207,24 +267,55 @@ body {
 }
 
 .contacts-info{
+  margin: 0;
+  padding: 0;
+  /* margin-top: -4px; */
+  align-self: flex-start;
+
+  font-weight: bold;
   text-align: right;
 }
 
 .contacts-info .working-hours {
   font-size: 14px;
   line-height: 16px;
-  font-weight: bold;
 }
 
 .contacts-info .phone {
   font-size: 22px;
-  line-height: 24px;
-  font-weight: bold;
+  line-height: 28px;
+}
+
+.catalog-content .catalog {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.catalog-item {
+  width: 267px;
+  margin-right: 26px;
+  margin-bottom: 40px;
+}
+
+.catalog-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.catalog-item h3 {
+  margin: 0;
+  padding: 0;
+}
+.catalog-item p {
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-item:hover,
 .catalog-item:focus {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(248, 247, 244, 0.2);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4)
 }
 
@@ -250,12 +341,182 @@ body {
 .price-info .rubles {
   font-size: 45px;
   line-height: 45px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
 }
 
 .price-info .kilo {
   font-size: 30px;
   line-height: 45px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
 }
+
+/* Стили для подвала */
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.main-footer ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+.main-footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-footer a:hover,
+.main-footer a:focus,
+.main-footer a:active {
+  color: #ffbc9e;
+}
+
+.main-footer .social {
+  width: 267px;
+}
+
+.main-footer .info {
+  margin: 0;
+  padding: 0;
+  width: 560px;
+}
+
+.main-footer .copyright {
+  width: 267px;
+}
+
+.info a {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.info b {
+  font-weight: bold;
+}
+
+.copyright a {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+
+/* Стили для сетки */
+
+body {
+  /* Временно для сетки
+  background-color: transparent;
+  background-image: url(../img/gllacy-index.jpg);
+  background-size: 1200px 2416px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  min-height: 2416px;
+  */
+}
+
+.catalog-page {
+    /* Временно для сетки
+    background-color: transparent;
+    background-image: url(../img/gllacy-catalog.jpg);
+    background-size: 1200px 1650px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 1650px;
+*/
+}
+
+
+.main-header {
+  /* Временно для сетки
+  min-height: 73px;
+  margin-bottom: 1204px;
+*/}
+
+.catalog-page .main-header {
+  /* Временно для сетки */
+  /* margin-bottom: 0; */
+  }
+
+.main-navigation {
+    /* Временно для сетки */
+    /* min-height: 73px; */
+}
+
+
+.main-navigation ul {
+
+    /* Временно для сетки */
+    /* min-height: 53px; */
+}
+
+
+.features {
+  /* Временно для сетки */
+   /* min-height: 250px; */
+}
+
+.features h3 {
+  /* Временно для сетки */
+  /* min-height: 60px; */
+}
+
+  .feature-column {
+    /* Временно для сетки */
+     /* min-height: 187px; */
+}
+
+.news-and-subscription {
+    /* Временно для сетки */
+     /* margin-bottom: 468px; */
+}
+.news,
+.subscription {
+    /* Временно для сетки
+     min-height: 222px;
+     background: none; */
+}
+
+.main-footer {
+    /* Временно для сетки
+     min-height: 104px; */
+}
+
+.main-footer .social {
+    /* Временно для сетки
+     min-height: 104px; */
+}
+
+.main-footer .info {
+    /* Временно для сетки
+     min-height: 104px; */
+}
+
+.main-footer .copyright {
+    /* Временно для сетки
+     min-height: 104px; */
+}
+
+.catalog-content {
+  /* Временно для сетки
+   box-sizing: border-box;
+   min-height: 1470px; */
+}
+
+
+.catalog-main-top {
+   /* Временно для сетки
+   min-height: 90px;
+   margin-bottom: 195x; */
+
+}
+
+
+.catalog-page .catalog {
+   /* Временно для сетки */
+   /* min-height: 1050px; */
+}
+
 
