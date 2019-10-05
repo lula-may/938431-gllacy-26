@@ -7,7 +7,7 @@ body {
   line-height: 22px;
   color: #ffffff;
 
- background-color: #849d8f;
+ background-color: #99aea2;
 }
 
 img {
@@ -15,30 +15,6 @@ img {
   height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.container {
-  box-sizing: border-box;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 27px;
-}
 /*
 .visually-hidden {
   position: absolute;
@@ -56,6 +32,41 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
  */
+
+.container {
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+
+ .button {
+  display: inline-block;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+
+  border: none;
+  background-color: #f06341;
+  background-image: linear-gradient( to bottom, #f26843 0%, #e74a35 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/slide-1.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
 
 .main-navigation {
 display: flex;
@@ -102,9 +113,11 @@ align-items: center;
   display: block;
   padding: 10px 14px 8px;
 
+  font: inherit;
   color: #ffffff;
   font-weight: bold;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 18px;
   text-decoration: none;
 }
 
@@ -145,8 +158,8 @@ align-items: center;
   margin-left: 10px;
 }
 
-
 .user-navigation-button {
+
   display: block;
   box-sizing: border-box;
   height: 32px;
@@ -158,27 +171,27 @@ align-items: center;
   line-height: 16px;
   font-weight: 500;
   color: #ffffff;
+  text-decoration: none;
 
   border: none;
   border-radius: 16px;
   box-shadow: none;
   background-color: rgba(255, 255, 255, 0.2);
-  text-decoration: none;
-}
+ }
 
 .user-navigation-button:hover,
 .user-navigation-button:focus {
   color: #323232;
   background-color: #f8f7f4;
 }
-
+/*
 .user-navigation .search {
   width: 32px;
 
   padding: 0;
   padding-top: 2px;
 }
-
+ */
 .user-navigation .search svg {
   margin: 0;
   padding: 0;
@@ -208,6 +221,7 @@ align-items: center;
   padding-left: 45px;
   padding-top: 9px;
 }
+/*
 .user-navigation .basket-empty::before {
   position: absolute;
   content: "";
@@ -217,14 +231,14 @@ align-items: center;
   height: 23px;
   background-image: url("../img/basket.svg");
 }
-
+ */
 .user-navigation .basket-not-empty {
   color: #323232;
 
   background-color: #f7f6f3;
 }
 
-.contacts-info{
+.contacts-info {
   margin: 0;
   padding: 0;
 
@@ -242,27 +256,8 @@ align-items: center;
   line-height: 28px;
 }
 
-
-.button {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
-  color: #ffffff;
-  text-decoration: none;
-
-  border: none;
-  background-color: #f06341;
-  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76)
-
-}
-
-.button:hover,
-.button:focus {
-  background-color: #f38167;
-}
-
-.button:active {
-  background-color: #d94934;
+.slider {
+  text-align: center;
 }
 
 .slider-list {
@@ -276,13 +271,26 @@ align-items: center;
   font-size: 60px;
   line-height: 60px;
   font-weight: bold;
+  text-align: center;
 }
 
-.slider .button {
+.slide-button {
   font-size: 32px;
   line-height: 44px;
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76)
 }
 
+.discount-item h3 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+}
+
+.discount-item p {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+}
 
 .features {
   padding: 27px 20px;
@@ -304,11 +312,6 @@ align-items: center;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
-}
-
-.columns {
-  display: flex;
-  justify-content: space-between;
 }
 
 .feature-column {
@@ -381,6 +384,20 @@ align-items: center;
   font-size: 16px;
   line-height: 22px;
   color: #5a5a5a;
+}
+
+.map .contacts {
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #323232;
+  background-color: #fefefe;
+}
+
+.contacts b {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
 }
 
 /* Стили для страницы каталога */
@@ -553,14 +570,14 @@ body {
 }
 
 .catalog-page {
-    /* Временно для сетки */
+    /* Временно для сетки
     background-color: transparent;
     background-image: url(../img/gllacy-catalog.jpg);
     background-size: 1200px 1650px;
     background-repeat: no-repeat;
     background-position: top center;
     min-height: 1650px;
-
+*/
 }
 
 
