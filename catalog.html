@@ -53,7 +53,66 @@
       </div>
     </div>
 
-    <!-- Здесь будет форма -->
+    <!-- форма -->
+    <h2 class="visually-hidden">Фильтр товаров</h2>
+    <form class="filters" method="get" action="https://echo.htmlacademy.ru">
+      <label class="field-name" for="category-field">Сортировка:</label>
+      <select class="filter category" id="sorting-feild" name="category-feild">
+        <option value="popularity">по популярности</option>
+        <option value="cheap-first">сначала недорогие</option>
+        <option value="expenxive-first">сначала дорогие</option>
+        <option value="fat-value">по жирности</option>
+      </select>
+      <label class="field-name" for="price-feild">Цена: 100 руб. - 500 руб.</label>
+      <div class="filter price-range" id="price-feild"></div>
+      <fieldset>
+      <legend class="field-name">Жирность:</legend>
+      <ul class="filter fat-content">
+        <li>
+          <input type="radio" name="fat" id="fat-1" value="0%">
+          <label for="fat-1">0%</label>
+        </li>
+        <li>
+          <input type="radio" name="fat" id="fat-2" value="<=10%" checked>
+          <label for="fat-2">до 10%</label>
+        </li>
+        <li>
+          <input type="radio" name="fat" id="fat-3" value="<=30%">
+          <label for="fat-3">до 30%</label>
+        </li>
+        <li>
+          <input type="radio" name="fat" id="fat-4" value=">30%">
+          <label for="fat-4">выше 30%</label>
+        </li>
+      </ul>
+      </fieldset>
+      <fieldset>
+        <legend class="field-name">Наполнители:</legend>
+        <ul class="filter fillers">
+          <li>
+            <label for="filler-1">шоколадные</label>
+            <input type="checkbox" name="chockolate" id="filler-1" checked>
+          </li>
+          <li>
+            <label for="filler-2">сахарные присыпки</label>
+            <input type="checkbox" name="sugar" id="filler-2" checked>
+          </li>
+          <li>
+            <label for="filler-3">фрукты</label>
+            <input type="checkbox" name="fruit" id="filler-3">
+          </li>
+          <li>
+            <label for="filler-4">сиропы</label>
+            <input type="checkbox" name="syrup" id="filler-4">
+          </li>
+          <li>
+            <label for="filler-5">джемы</label>
+            <input type="checkbox" name="jam" id="filler-5">
+          </li>
+        </ul>
+      </fieldset>
+      <button class="filter-field submit-button" type="submit">Применить</button>
+    </form>
     <h2 class="visually-hidden">Каталог мороженого</h2>
     <ul class="catalog">
       <li class="catalog-item">
@@ -179,7 +238,7 @@
       </li>
     </ul>
     <!--Временно скрыт пагинатор -->
-    <ul style="display: none;">
+    <ul class="paginator">
         <li><a>Назад</a></li>
         <li><a>1</a></li>
         <li><a href="#">2</a></li>
