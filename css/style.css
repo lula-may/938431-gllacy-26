@@ -89,7 +89,7 @@ justify-content: space-between;
   margin-left: 25px;
 }
 
-.user-navigation .button {
+.user-navigation-button {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
@@ -101,8 +101,8 @@ justify-content: space-between;
   text-decoration: none;
 }
 
-.user-navigation .button:hover,
-.user-navigation .button:focus {
+.user-navigation-button:hover,
+.user-navigation-button:focus {
   color: #323232;
   background-color: #f8f7f4;
 }
@@ -113,11 +113,31 @@ justify-content: space-between;
   background-color: #f7f6f3;
 }
 
-.main-page .button {
-  font-size: 32px;
-  line-height: 44px;
+.contacts-info{
+  margin: 0;
+  padding: 0;
+
+  font-weight: bold;
+  text-align: right;
+}
+
+.contacts-info .working-hours {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.contacts-info .phone {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+
+.button {
+  font-size: 18;
+  line-height: 24px;
   font-weight: bold;
   color: #ffffff;
+  text-decoration: none;
 
   border: none;
   background-color: #f06341;
@@ -125,13 +145,31 @@ justify-content: space-between;
 
 }
 
-.main-page .button:hover,
-.main-page .button:focus {
+.button:hover,
+.button:focus {
   background-color: #f38167;
 }
 
-.main-page .button:active {
+.button:active {
   background-color: #d94934;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slide-title {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+.slider .button {
+  font-size: 32px;
+  line-height: 44px;
 }
 
 
@@ -210,7 +248,6 @@ justify-content: space-between;
 
 .subscription {
   padding: 5px;
-  min-height: 210px;
 
   background-image: url(../img/bg-post.svg);
   background-position: top center;
@@ -237,7 +274,7 @@ justify-content: space-between;
 
 /* Стили для страницы каталога */
 
-.catalog-content h1 {
+.catalog-page h1 {
   margin: 0;
   padding: 0;
 
@@ -246,13 +283,15 @@ justify-content: space-between;
   font-weight: bold;
 }
 
-.catalog-content ul {
+.catalog {
   list-style: none;
 }
 
 .breadcrumbs {
+  list-style: none;
   font-size: 14px;
   line-height: 16px;
+
 }
 
 .breadcrumbs a {
@@ -266,27 +305,7 @@ justify-content: space-between;
   color: #ffbc9e;
 }
 
-.contacts-info{
-  margin: 0;
-  padding: 0;
-  /* margin-top: -4px; */
-  align-self: flex-start;
-
-  font-weight: bold;
-  text-align: right;
-}
-
-.contacts-info .working-hours {
-  font-size: 14px;
-  line-height: 16px;
-}
-
-.contacts-info .phone {
-  font-size: 22px;
-  line-height: 28px;
-}
-
-.catalog-content .catalog {
+.catalog {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
