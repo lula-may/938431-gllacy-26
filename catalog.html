@@ -7,7 +7,7 @@
      rel="stylesheet">
      <link href="css/normalize.css" rel="stylesheet">
      <link href="css/style.css" rel="stylesheet">
-     <link href="css/outline.css" rel="stylesheet">
+     <!-- <link href="css/outline.css" rel="stylesheet"> -->
   </head>
 
   <body class="catalog-page">
@@ -32,16 +32,18 @@
           <li><a href="#">О Компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li><button class="button search" type="button">Поиск по сайту</button></li>
-          <li><button class="button login" type="button">Вход</button></li>
-          <li><a class="button basket basket-not-empty" href="#">Корзина<span>2 товара</span></a></li>
+          <li><button class="user-navigation-button search" type="button">Поиск по сайту</button></li>
+          <li><button class="user-navigation-button login" type="button">Вход</button></li>
+          <li><a class="user-navigation-button basket basket-not-empty" href="#">Корзина<span>2 товара</span></a></li>
         </ul>
       </nav>
+      <p class="contacts-info">
+        <span class="working-hours"> С 10 до 20, ежедневно</span><br>
+        <span class="phone">8 812 450-25-25</span>
+      </p>
   </header>
 
-  <main  class="catalog-content container">
-    <div class="catalog-content-top columns">
-      <div class="left-column-wrapper">
+  <main  class="container">
         <h1>Сливочное мороженое</h1>
         <ul class="breadcrumbs">
           <li><a href="index.html">Главная</a></li>
@@ -49,21 +51,17 @@
           <li class="current">Сливочное</li>
         </ul>
       </div>
-      <p class="contacts-info">
-        <span class="working-hours"> С 10 до 20, ежедневно</span><br>
-        <span class="phone">8 812 450-25-25</span>
-      </p>
     </div>
 
     <!-- Здесь будет форма -->
-    <!-- <h2 class="visually-hidden">Каталог мороженого</h2> -->
+    <h2 class="visually-hidden">Каталог мороженого</h2>
     <ul class="catalog">
       <li class="catalog-item">
         <h3><a href="#">Сливочное с апельсиновым
             джемом и цитусовой стружкой</a>
         </h3>
         <a href="#"><img src="img/product-1.png" width="267" height="267"
-            alt="Альтернативный текст"></a>
+            alt="Фото мороженого"></a>
         <p class="price-info">
           <span class="rubles"> 310 ₽</span>
           <span class="kilo">/кг</span>
@@ -73,7 +71,7 @@
         <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a>
         </h3>
         <a href="#"><img src="img/product-2.png" width="267" height="267"
-          alt="Альтернативный текст"></a>
+          alt="Фото мороженого"></a>
         <p class="price-info">
           <span class="rubles">380 ₽</span>
           <span class="kilo">/кг</span>
@@ -83,7 +81,7 @@
         <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
         </h3>
         <a href="#"><img src="img/product-3.png" width="267" height="267"
-          alt="Альтернативный текст"></a>
+          alt="Фото мороженого"></a>
         <p class="price-info">
           <span class="rubles">355 ₽</span>
           <span class="kilo">/кг</span>
@@ -93,7 +91,7 @@
         <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a>
         </h3>
         <a href="#"><img src="img/product-4.png" width="267" height="267"
-            alt="Альтернативный текст"></a>
+            alt="Фото мороженого"></a>
         <p class="price-info">
           <span class="rubles">415 ₽</span>
           <span class="kilo">/кг</span>
@@ -103,7 +101,7 @@
         <h3><a href="#">Сливочное с брусничным джемом</a>
         </h3>
         <a href="#"><img src="img/product-5.png" width="267" height="267"
-            alt="Альтернативный текст"></a>
+            alt="Фото мороженого"></a>
         <p class="price-info">
           <span class="rubles">325 ₽</span>
           <span class="kilo">/кг</span>
@@ -113,7 +111,7 @@
         <h3><a href="#">Сливочно-черничное с цельными ягодами черники</a>
         </h3>
         <a href="#"><img src="img/product-6.png" width="267" height="267"
-            alt="Альтернативный текст"></a>
+            alt="Фото мороженого"></a>
         <p class="price-info">
           <span class="rubles">410 ₽</span>
           <span class="kilo">/кг</span>
@@ -123,7 +121,7 @@
         <h3><a href="#">Сливочно-лимонное с карамельной присыпкой</a>
         </h3>
         <a href="#"><img src="img/product-7.png" width="267" height="267"
-          alt="Альтернативный текст"></a>
+          alt="Фото мороженого"></a>
         <p class="price-info">
           <span class="rubles">375 ₽</span>
           <span class="kilo">/кг</span>
@@ -133,7 +131,7 @@
         <h3><a href="#">Сливочное с шоколадной стружкой</a>
         </h3>
         <a href="#"><img src="img/product-8.png" width="267" height="267"
-          alt="Альтернативный текст"></a>
+          alt="Фото мороженого"></a>
         <p class="price-info">
           <span class="rubles">320 ₽</span>
           <span class="kilo">/кг</span>
@@ -143,7 +141,7 @@
         <h3><a href="#">Сливочно-ванильное с кусочками шоколада</a>
         </h3>
         <a href="#"><img src="img/product-9.png" width="267" height="267"
-            alt="Альтернативный текст"></a>
+            alt="Фото мороженого"></a>
         <p class="price-info">
           <span class="rubles">440 ₽</span>
           <span class="kilo">/кг</span>
@@ -153,7 +151,7 @@
         <h3><a href="#">Сливочноe с ментоловым сиропом</a>
         </h3>
         <a href="#"><img src="img/product-10.png" width="267" height="267"
-          alt="Альтернативный текст"></a>
+          alt="Фото мороженого"></a>
         <p class="price-info">
           <span class="rubles">435 ₽</span>
           <span class="kilo">/кг</span>
@@ -163,7 +161,7 @@
         <h3><a href="#">Сливочное с кусочками черного шоколада</a>
         </h3>
         <a href="#"><img src="img/product-11.png" width="267" height="267"
-          alt="Альтернативный текст"></a>
+          alt="Фото мороженого"></a>
         <p class="price-info">
           <span class="rubles">355 ₽</span>
           <span class="kilo">/кг</span>
@@ -173,7 +171,7 @@
         <h3><a href="#">Сливочное с мятным сиропом</a>
         </h3>
         <a href="#"><img src="img/product-12.png" width="267" height="267"
-          alt="Альтернативный текст"></a>
+          alt="Фото мороженого"></a>
         <p class="price-info">
           <span class="rubles">420 ₽</span>
           <span class="kilo">/кг</span>
