@@ -117,10 +117,14 @@ align-items: center;
 }
 
 .site-navigation > li {
+  position: relative;
+  vertical-align: middle;
 }
 .site-navigation > li > a {
   display: block;
-  padding: 10px 14px 8px;
+  box-sizing: border-box;
+  height: 32px;
+  padding: 8px 14px 8px;
 
   font: inherit;
   color: #ffffff;
@@ -151,6 +155,61 @@ align-items: center;
   color: #ffffff;
 }
 
+.site-navigation .sub-menu {
+  display: none;
+  position: absolute;
+  left: -7px;
+  top: 30px;
+  width: 145px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 5px 0;
+  list-style: none;
+
+  border-radius: 5px;
+  background-color: #f8f7f4;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.site-navigation > li:hover > ul {
+  display: block;
+
+}
+
+.sub-menu a {
+  display: block;
+  padding-left: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font: inherit;
+  font-size: 14px;
+  line-height: 16px;
+  color: #323232;
+  text-decoration: none;
+}
+
+.sub-menu a:hover,
+.sub-menu a:focus {
+  background-color: #fbded7;
+}
+
+.sub-menu a:active {
+  background-color: #f6b5a5;
+}
+
+.sub-menu li:first-child {
+  position: relative;
+}
+.sub-menu li:first-child::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  width: 132px;
+  height: 1px;
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .user-navigation {
   display: flex;
   justify-content: flex-end;
@@ -164,6 +223,7 @@ align-items: center;
   margin-left: 25px;
 }
 .user-navigation li {
+  vertical-align: middle;
   margin-left: 10px;
 }
 
@@ -174,7 +234,7 @@ align-items: center;
   height: 32px;
   padding-left: 15px;
   padding-right: 16px;
-  padding-top: 2px;
+  /* padding-top: 2px; */
 
   font-size: 14px;
   line-height: 16px;
@@ -301,6 +361,17 @@ align-items: center;
   font-weight: bold;
 }
 
+.discount-raspberry {
+  background-color: #b93242;
+  background-image: url("../img/bg-raspberry.jpg");
+  background-repeat: no-repeat;
+}
+
+.discount-chocolate {
+  background-color: #704d45;
+  background-image: url("../img/bg-chocolate.jpg");
+  background-repeat: no-repeat;
+}
 .features {
   padding: 27px 20px;
   margin-bottom:40px;
