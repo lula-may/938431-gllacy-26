@@ -62,7 +62,10 @@
         <option value="fat-value">по жирности</option>
       </select>
       <label class="field-name" for="price-field">Цена: 100 руб. - 500 руб.</label>
-      <input class="filter price-range" type="range" name="price-range" id="price-field" min="100" max="500" step="50">
+      <div class="filter price-range">
+        <input type="range" name="price-range" id="price-field" min="100" max="500" step="50">
+      </div>
+
       <fieldset>
       <legend class="field-name">Жирность:</legend>
       <ul class="filter fat-content">
@@ -109,7 +112,7 @@
           </li>
         </ul>
       </fieldset>
-      <button class="filter-field submit-button" type="submit">Применить</button>
+      <button class="submit-button" type="submit">Применить</button>
     </form>
     <h2 class="visually-hidden">Каталог мороженого</h2>
     <ul class="catalog">
@@ -123,6 +126,7 @@
           <span class="rubles"> 310 ₽</span>
           <span class="kilo">/кг</span>
         </p>
+        <a class="button" href="">Быстрый просмотр</a>
       </li>
       <li class="catalog-item">
         <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a>
@@ -133,6 +137,7 @@
           <span class="rubles">380 ₽</span>
           <span class="kilo">/кг</span>
         </p>
+        <a class="button" href="">Быстрый просмотр</a>
       </li>
       <li class="catalog-item">
         <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
@@ -143,6 +148,7 @@
           <span class="rubles">355 ₽</span>
           <span class="kilo">/кг</span>
         </p>
+        <a class="button" href="">Быстрый просмотр</a>
       </li>
       <li class="catalog-item">
         <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a>
@@ -153,6 +159,7 @@
           <span class="rubles">415 ₽</span>
           <span class="kilo">/кг</span>
         </p>
+        <a class="button" href="">Быстрый просмотр</a>
       </li>
       <li class="catalog-item">
         <h3><a href="#">Сливочное с брусничным джемом</a>
@@ -163,6 +170,7 @@
           <span class="rubles">325 ₽</span>
           <span class="kilo">/кг</span>
         </p>
+        <a class="button" href="">Быстрый просмотр</a>
       </li>
       <li class="catalog-item">
         <h3><a href="#">Сливочно-черничное с цельными ягодами черники</a>
@@ -173,6 +181,7 @@
           <span class="rubles">410 ₽</span>
           <span class="kilo">/кг</span>
         </p>
+        <a class="button" href="">Быстрый просмотр</a>
       </li>
       <li class="catalog-item">
         <h3><a href="#">Сливочно-лимонное с карамельной присыпкой</a>
@@ -183,6 +192,7 @@
           <span class="rubles">375 ₽</span>
           <span class="kilo">/кг</span>
         </p>
+        <a class="button" href="">Быстрый просмотр</a>
       </li>
       <li class="catalog-item">
         <h3><a href="#">Сливочное с шоколадной стружкой</a>
@@ -193,6 +203,7 @@
           <span class="rubles">320 ₽</span>
           <span class="kilo">/кг</span>
         </p>
+        <a class="button" href="">Быстрый просмотр</a>
       </li>
       <li class="catalog-item">
         <h3><a href="#">Сливочно-ванильное с кусочками шоколада</a>
@@ -203,6 +214,7 @@
           <span class="rubles">440 ₽</span>
           <span class="kilo">/кг</span>
         </p>
+        <a class="button" href="">Быстрый просмотр</a>
       </li>
       <li class="catalog-item">
         <h3><a href="#">Сливочноe с ментоловым сиропом</a>
@@ -213,6 +225,7 @@
           <span class="rubles">435 ₽</span>
           <span class="kilo">/кг</span>
         </p>
+        <a class="button" href="">Быстрый просмотр</a>
       </li>
       <li class="catalog-item">
         <h3><a href="#">Сливочное с кусочками черного шоколада</a>
@@ -223,6 +236,7 @@
           <span class="rubles">355 ₽</span>
           <span class="kilo">/кг</span>
         </p>
+        <a class="button" href="">Быстрый просмотр</a>
       </li>
       <li class="catalog-item">
         <h3><a href="#">Сливочное с мятным сиропом</a>
@@ -233,12 +247,13 @@
           <span class="rubles">420 ₽</span>
           <span class="kilo">/кг</span>
         </p>
+        <a class="button" href="">Быстрый просмотр</a>
       </li>
     </ul>
-    <!--Временно скрыт пагинатор -->
+    <!-- пагинатор -->
     <ul class="paginator">
         <li><a>Назад</a></li>
-        <li><a>1</a></li>
+        <li><a class="current">1</a></li>
         <li><a href="#">2</a></li>
         <li><a href="#">3</a></li>
         <li><a href="#">4</a></li>
