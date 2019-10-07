@@ -21,7 +21,7 @@
           </a>
           <ul class="site-navigation">
             <li><a href="catalog.html">Каталог</a>
-              <!-- Подменю временно скрыто -->
+              <!-- Подменю  -->
               <ul class="sub-menu">
                 <li><a href="#"><strong>Новинки</strong></a></li>
                 <li><a href="catalog.html">Сливочное</a></li>
@@ -250,48 +250,47 @@
 
     </div>
 
-    <!-- Временно скрыто Поле поиска -->
-      <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+    <!--  Поле поиска -->
+      <form class="pop-up search-form" action="https://echo.htmlacademy.ru" method="get">
         <label class="visually-hidden" for="search-field">Что ищем?</label>
         <input id="search-field" type="text" name="search" placeholder="Крем-брюле">
       </form>
 
     <!-- Временно скрыто Окно входа -->
-    <div class="login-form">
+    <form class="pop-up login-form" action="https://echo.htmlacademy.ru" method="post">
       <h4 class="visually-hidden">Окно входа</h4>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label class="visually-hidden" for="login-field">Ваш логин:</label>
-          <input id="login-field" type="text" name="login" placeholder="Электронная почта">
-        </p>
-        <p>
-          <label class="visually-hidden" for="password-field">Ваш пароль:</label>
-          <input id="password-field" type="password" name="password" placeholder="Пароль">
-        </p>
-        <button type="submit">Войти</button>
-      </form>
+      <p class="pop-up-item">
+        <label class="visually-hidden" for="login-field">Ваш логин:</label>
+        <input id="login-field" type="text" name="login" placeholder="email@example.com">
+      </p>
+      <p class="pop-up-item">
+        <label class="visually-hidden" for="password-field">Ваш пароль:</label>
+        <input id="password-field" type="password" name="password" placeholder="••••••••">
+      </p>
+      <button class="button" type="submit">Войти</button>
       <a href="#">Забыли пароль?</a>
       <a href="#">Новая регистрация</a>
-    </div>
+    </form>
 
-    <!-- Временно скрыто Форма обратной связи -->
-    <div style="display: none;">
-      <h4>Мы обязательно вам ответим!</h4>
+    <!-- Форма обратной связи -->
+    <div class="pop-up backup-form">
       <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
+        <h4>Мы обязательно вам ответим!</h4>
+        <p class="pop-up-item">
           <label class="visually-hidden" for="user-name">Ваше имя:</label>
           <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
         </p>
-        <p>
+        <p class="pop-up-item">
           <label class="visually-hidden" for="user-email">Ваш email:</label>
           <input id="user-email" type="text" name="user-email" placeholder="email@example.com">
         </p>
-        <p>
-          <label for="comment">Напишите здесь:</label>
-          <textarea id="comment" rows="5" cols="40" name="comment">В свободной форме</textarea>
+        <p class="pop-up-item">
+          <label class="visually-hidden" for="comment">Напишите здесь:</label>
+          <textarea id="comment" rows="5" cols="40" name="comment" placeholder="В свободной форме"></textarea>
         </p>
-        <button type="submit">Отправить</button>
+        <button class="button" type="submit">Отправить</button>
       </form>
+      <span>закрыть</span>
     </div>
   </body>
 </html>
