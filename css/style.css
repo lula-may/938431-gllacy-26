@@ -132,7 +132,8 @@ align-items: center;
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
-  text-decoration: none;
+  text-underline-position: under;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
 }
 
 .site-navigation > li > a:hover,
@@ -407,7 +408,9 @@ align-items: center;
 }
 
 .news,
-.subscription {
+.subscription,
+.discount-item {
+  box-sizing: border-box;
   width: 560px;
   border-radius: 15px;
 }
@@ -505,7 +508,8 @@ align-items: center;
 }
 
 .breadcrumbs a {
-  text-decoration: none;
+  text-underline-position: under;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
   color: #ffffff;
 }
 
@@ -513,6 +517,7 @@ align-items: center;
 .breadcrumbs a:focus,
 .breadcrumbs a:active {
   color: #ffbc9e;
+  text-decoration-color: rgba(232, 77, 55, 0.3);
 }
 
 .filters .filter {
@@ -637,13 +642,15 @@ align-items: center;
   line-height: 22px;
   font-weight: 500;
   color: #ffffff;
-  text-decoration: none;
+  text-underline-position: under;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
 }
 
 .catalog-item a:hover,
 .catalog-item a:focus,
 .catalog-item a:active {
   color: #ffbc9e;
+  text-decoration-color: rgba(232, 77, 55, 0.3);
 }
 
 .catalog-item .price-info {
@@ -719,13 +726,15 @@ align-items: center;
 }
 .main-footer a {
   color: #ffffff;
-  text-decoration: none;
+  text-underline-position: under;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
 }
 
 .main-footer a:hover,
 .main-footer a:focus,
 .main-footer a:active {
   color: #ffbc9e;
+  text-decoration-color: rgba(232, 77, 55, 0.3);
 }
 
 .main-footer .social {
@@ -763,9 +772,11 @@ align-items: center;
 
 /* Стили для попапов */
 .pop-up {
+  box-sizing: border-box;
+
   background-color: #f8f7f4;
   border-radius: 5px;
-  box-sizing: border-box;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .search-form {
@@ -784,12 +795,15 @@ align-items: center;
   font-size: 13px;
   line-height: 24px;
   color: #323232;
+  text-underline-position: under;
+  text-decoration-color: rgba(50, 50, 50, 0.3);
 }
 
 .login-form a:hover,
 .login-form a:focus,
 .login-form a:active {
   color: #e84d37;
+  text-decoration-color: rgba(232, 77, 55, 0.3);
 }
 
 .backup-form {
@@ -812,8 +826,10 @@ align-items: center;
 .pop-up textarea {
   box-sizing: border-box;
   width: 100%;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  height: 45px;
+  vertical-align: middle;
+  /* padding-top: 9px; */
+  /* padding-bottom: 9px; */
   padding-left: 14px;
 
   font: inherit;
@@ -842,7 +858,62 @@ align-items: center;
   border: 2px solid #8fbdec;
 }
 
+.basket-pop-up {
+  width: 539px;
+  height: 242px;
+  padding-top: 20px;
+  padding-right: 13px;
+  padding-bottom: 20px;
+  padding-left: 20px;
 
+  font-size: 13px;
+  line-height: 16px;
+  color: #323232;
+}
+
+.basket-content {
+  text-align: left;
+  border-bottom: 1px solid grey;
+}
+
+.basket-content tr {
+}
+
+.basket-content td {
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  vertical-align: top;
+}
+
+.basket-content td:first-child {
+  width: 22px;
+}
+
+.basket-content td:nth-child(2) {
+  width: 46px;
+  vertical-align: middle;
+}
+
+.basket-content td:nth-child(3) {
+  width: 247px;
+}
+
+.basket-content td:nth-child(4) {
+  width: 122px;
+}
+
+.basket-content img {
+  width: 33px;
+  height: 33px;
+}
+
+.basket-total {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: bold;
+  text-align: right;
+}
 /* Стили для сетки */
 
 body {

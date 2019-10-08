@@ -256,14 +256,14 @@
         <input id="search-field" type="text" name="search" placeholder="Крем-брюле">
       </form>
 
-    <!-- Временно скрыто Окно входа -->
+    <!--  Окно входа -->
     <form class="pop-up login-form" action="https://echo.htmlacademy.ru" method="post">
       <h4 class="visually-hidden">Окно входа</h4>
-      <p class="pop-up-item">
+      <p class="pop-up-field">
         <label class="visually-hidden" for="login-field">Ваш логин:</label>
         <input id="login-field" type="text" name="login" placeholder="email@example.com">
       </p>
-      <p class="pop-up-item">
+      <p class="pop-up-field">
         <label class="visually-hidden" for="password-field">Ваш пароль:</label>
         <input id="password-field" type="password" name="password" placeholder="••••••••">
       </p>
@@ -276,21 +276,21 @@
     <div class="pop-up backup-form">
       <form action="https://echo.htmlacademy.ru" method="post">
         <h4>Мы обязательно вам ответим!</h4>
-        <p class="pop-up-item">
+        <p class="pop-up-field">
           <label class="visually-hidden" for="user-name">Ваше имя:</label>
           <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
         </p>
-        <p class="pop-up-item">
+        <p class="pop-up-field">
           <label class="visually-hidden" for="user-email">Ваш email:</label>
           <input id="user-email" type="text" name="user-email" placeholder="email@example.com">
         </p>
-        <p class="pop-up-item">
+        <p class="pop-up-field">
           <label class="visually-hidden" for="comment">Напишите здесь:</label>
           <textarea id="comment" rows="5" cols="40" name="comment" placeholder="В свободной форме"></textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
-      <span>закрыть</span>
+      <button type="button" aria-label="Закрыть">закрыть</button>
     </div>
   </body>
 </html>
