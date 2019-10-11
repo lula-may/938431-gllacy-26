@@ -7,7 +7,7 @@
      rel="stylesheet">
      <link href="css/normalize.css" rel="stylesheet">
      <link href="css/style.css" rel="stylesheet">
-     <!-- <link href="css/outline.css" rel="stylesheet"> -->
+     <link href="css/outline.css" rel="stylesheet">
   </head>
 
   <body class="catalog-page">
@@ -19,22 +19,25 @@
         </a>
         <ul class="site-navigation">
           <li class="current"><a>Каталог</a>
-            <!-- Подменю временно скрыто -->
-            <ul style="display: none;">
-              <li><a href="#"><strong>Новинки</strong></a></li>
+            <!-- Подменю  скрыто -->
+            <ul class="sub-menu">
+              <li>
+                <a href="#"><strong>Новинки</strong></a>
+                <div class="line"></div>
+              </li>
               <li><a href="catalog.html">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
               <li><a href="#">Мелорин</a></li>
             </ul>
-          </li>
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">О Компании</a></li>
-        </ul>
+        </li>
+          <li><a class="underlined-link" href="#">Доставка и оплата<span class="underline"></span></a></li>
+          <li><a class="underlined-link" href="#">О Компании<span class="underline"></span></a></li>
+      </ul>
         <ul class="user-navigation">
-          <li><button class="user-navigation-button search" type="button">Поиск по сайту</button></li>
+          <li><button class="user-navigation-button search" type="button" aria-label="Поиск по сайту"></button></li>
           <li><button class="user-navigation-button login" type="button">Вход</button></li>
-          <li><a class="user-navigation-button basket basket-not-empty" href="#">Корзина<span>2 товара</span></a></li>
+          <li><a class="user-navigation-button basket basket-not-empty" href="#" aria-label="Корзина"><span>2 товара</span></a></li>
         </ul>
       </nav>
       <p class="contacts-info">
@@ -44,17 +47,17 @@
   </header>
 
   <main  class="container">
-        <h1>Сливочное мороженое</h1>
         <ul class="breadcrumbs">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="#">Каталог</a></li>
+          <li><a class="underlined-link" href="index.html">Главная<span class="underline"></span></a></li>
+          <li><a class="underlined-link" href="#">Каталог<span class="underline"></span></a></li>
           <li class="current">Сливочное</li>
         </ul>
+        <h1>Сливочное мороженое</h1>
 
     <!-- форма -->
     <h2 class="visually-hidden">Фильтр товаров</h2>
     <form class="filters" method="get" action="https://echo.htmlacademy.ru">
-      <label class="field-name" for="category-field">Сортировка:</label>
+      <!-- <label class="field-name" for="category-field">Сортировка:</label>
       <select class="filter category" id="category-field" name="category-field">
         <option value="popularity">по популярности</option>
         <option value="cheap-first">сначала недорогие</option>
@@ -112,13 +115,13 @@
           </li>
         </ul>
       </fieldset>
-      <button class="submit-button" type="submit">Применить</button>
+      <button class="submit-button" type="submit">Применить</button> -->
     </form>
     <h2 class="visually-hidden">Каталог мороженого</h2>
     <ul class="catalog">
-      <li class="catalog-item">
-        <h3><a href="#">Сливочное с апельсиновым
-            джемом и цитусовой стружкой</a>
+      <!-- <li class="catalog-item">
+        <h3><a class="underlined-link" href="#">Сливочное с апельсиновым
+            джемом и цитусовой стружкой<span class="underline"></span></a>
         </h3>
         <a href="#"><img src="img/product-1.png" width="267" height="267"
             alt="Фото мороженого"></a>
@@ -129,7 +132,7 @@
         <a class="button" href="">Быстрый просмотр</a>
       </li>
       <li class="catalog-item">
-        <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a>
+        <h3><a class="underlined-link" href="#">Сливочно-кофейное с кусочками шоколада<span class="underline"></span></a>
         </h3>
         <a href="#"><img src="img/product-2.png" width="267" height="267"
           alt="Фото мороженого"></a>
@@ -140,7 +143,7 @@
         <a class="button" href="">Быстрый просмотр</a>
       </li>
       <li class="catalog-item">
-        <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+        <h3><a class="underlined-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада<span class="underline"></span></a>
         </h3>
         <a href="#"><img src="img/product-3.png" width="267" height="267"
           alt="Фото мороженого"></a>
@@ -151,7 +154,7 @@
         <a class="button" href="">Быстрый просмотр</a>
       </li>
       <li class="catalog-item">
-        <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+        <h3><a class="underlined-link" href="#">Сливочное крем-брюле с карамельной подливкой<span class="underline"></span></a>
         </h3>
         <a href="#"><img src="img/product-4.png" width="267" height="267"
             alt="Фото мороженого"></a>
@@ -162,7 +165,7 @@
         <a class="button" href="">Быстрый просмотр</a>
       </li>
       <li class="catalog-item">
-        <h3><a href="#">Сливочное с брусничным джемом</a>
+        <h3><a class="underlined-link" href="#">Сливочное с брусничным джемом<span class="underline"></span></a>
         </h3>
         <a href="#"><img src="img/product-5.png" width="267" height="267"
             alt="Фото мороженого"></a>
@@ -173,7 +176,7 @@
         <a class="button" href="">Быстрый просмотр</a>
       </li>
       <li class="catalog-item">
-        <h3><a href="#">Сливочно-черничное с цельными ягодами черники</a>
+        <h3><a class="underlined-link" href="#">Сливочно-черничное с цельными ягодами черники<span class="underline"></span></a>
         </h3>
         <a href="#"><img src="img/product-6.png" width="267" height="267"
             alt="Фото мороженого"></a>
@@ -184,7 +187,7 @@
         <a class="button" href="">Быстрый просмотр</a>
       </li>
       <li class="catalog-item">
-        <h3><a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+        <h3><a class="underlined-link" href="#">Сливочно-лимонное с карамельной присыпкой<span class="underline"></span></a>
         </h3>
         <a href="#"><img src="img/product-7.png" width="267" height="267"
           alt="Фото мороженого"></a>
@@ -195,7 +198,7 @@
         <a class="button" href="">Быстрый просмотр</a>
       </li>
       <li class="catalog-item">
-        <h3><a href="#">Сливочное с шоколадной стружкой</a>
+        <h3><a class="underlined-link" href="#">Сливочное с шоколадной стружкой<span class="underline"></span></a>
         </h3>
         <a href="#"><img src="img/product-8.png" width="267" height="267"
           alt="Фото мороженого"></a>
@@ -206,7 +209,7 @@
         <a class="button" href="">Быстрый просмотр</a>
       </li>
       <li class="catalog-item">
-        <h3><a href="#">Сливочно-ванильное с кусочками шоколада</a>
+        <h3><a class="underlined-link" href="#">Сливочно-ванильное с кусочками шоколада<span class="underline"></span></a>
         </h3>
         <a href="#"><img src="img/product-9.png" width="267" height="267"
             alt="Фото мороженого"></a>
@@ -217,7 +220,7 @@
         <a class="button" href="">Быстрый просмотр</a>
       </li>
       <li class="catalog-item">
-        <h3><a href="#">Сливочноe с ментоловым сиропом</a>
+        <h3><a class="underlined-link" href="#">Сливочноe с ментоловым сиропом<span class="underline"></span></a>
         </h3>
         <a href="#"><img src="img/product-10.png" width="267" height="267"
           alt="Фото мороженого"></a>
@@ -228,7 +231,7 @@
         <a class="button" href="">Быстрый просмотр</a>
       </li>
       <li class="catalog-item">
-        <h3><a href="#">Сливочное с кусочками черного шоколада</a>
+        <h3><a class="underlined-link" href="#">Сливочное с кусочками черного шоколада<span class="underline"></span></a>
         </h3>
         <a href="#"><img src="img/product-11.png" width="267" height="267"
           alt="Фото мороженого"></a>
@@ -239,7 +242,7 @@
         <a class="button" href="">Быстрый просмотр</a>
       </li>
       <li class="catalog-item">
-        <h3><a href="#">Сливочное с мятным сиропом</a>
+        <h3><a class="underlined-link" href="#">Сливочное с мятным сиропом<span class="underline"></span></a>
         </h3>
         <a href="#"><img src="img/product-12.png" width="267" height="267"
           alt="Фото мороженого"></a>
@@ -248,71 +251,70 @@
           <span class="kilo">/кг</span>
         </p>
         <a class="button" href="">Быстрый просмотр</a>
-      </li>
+      </li> -->
     </ul>
     <!-- пагинатор -->
     <ul class="paginator">
-        <li><a>Назад</a></li>
+        <!-- <li><a>Назад</a></li>
         <li><a class="current">1</a></li>
         <li><a href="#">2</a></li>
         <li><a href="#">3</a></li>
         <li><a href="#">4</a></li>
         <li><a href="#">5</a></li>
-        <li><a href="#">Вперед</a></li>
+        <li><a href="#">Вперед</a></li> -->
     </ul>
+    <div class="white-line"></div>
   </main>
   <footer class="main-footer container">
     <div class="social">
       <ul>
-        <li><a href="#" aria-label="Глейси в Твиттере">Твиттер</a></li>
+        <!-- <li><a href="#" aria-label="Глейси в Твиттере">Твиттер</a></li>
         <li><a href="#" aria-label="Глейси в Инстаграм">Инстаграм</a></li>
         <li><a href="#" aria-label="Глейси в Фейсбуке">Фейсбук</a></li>
-        <li><a href="#" aria-label="Глейси во Вконтакте">Вконтакте</a></li>
+        <li><a href="#" aria-label="Глейси во Вконтакте">Вконтакте</a></li> -->
       </ul>
     </div>
-    <div>
-      <ul class="info">
-        <li>С любовью<a href="#"><b>Для поставщиков</b></a></li>
-        <li><a href="#">О производстве</a></li>
-        <li><a href="#">Наши документы</a></li>
-        <li><a href="#">Экологические стандарты</a></li>
-      </ul>
-    </div>
+    <ul class="info">
+        <!-- <li>С любовью<a class="underlined-link" href="#"><b>Для поставщиков</b><span class="underline"></span></a></li>
+        <li><a class="underlined-link" href="#">О производстве<span class="underline"></span></a></li>
+        <li><a class="underlined-link" href="#">Наши документы<span class="underline"></span></a></li>
+        <li><a class="underlined-link" href="#">Экологические стандарты<span class="underline"></span></a></li> -->
+    </ul>
     <div class="copyright">
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
+      <!-- <a href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/logo-htmlacademy.svg" width="110" height="40"
-         alt="Логотип htmlacademy">
+          alt="Логотип htmlacademy">
       </a>
       <p>
-        Сделано в<a href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy</a> © 2019
-      </p>
+        Сделано в<a class="underlined-link" href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy<span class="underline"></span></a> © 2019
+      </p> -->
     </div>
   </footer>
 
 <!-- Поле поиска -->
-  <form class="pop-up search-form" action="https://echo.htmlacademy.ru" method="get">
+  <form class="pop-up search-form visually-hidden" action="https://echo.htmlacademy.ru" method="get">
     <label class="visually-hidden" for="search-field">Что ищем?</label>
     <input id="search-field" type="text" name="search" placeholder="Крем-брюле">
   </form>
 
 <!-- Окно входа -->
-  <form class="pop-up login-form" action="https://echo.htmlacademy.ru" method="post">
-    <h4 class="visually-hidden">Окно входа</h4>
-    <p class="pop-up-field">
-      <label class="visually-hidden" for="login-field">Ваш логин:</label>
-      <input id="login-field" type="text" name="login" placeholder="email@example.com">
-    </p>
-    <p class="pop-up-field">
-      <label class="visually-hidden" for="password-field">Ваш пароль:</label>
-      <input id="password-field" type="password" name="password" placeholder="••••••••">
-    </p>
-    <button class="button" type="submit">Войти</button>
-    <a href="#">Забыли пароль?</a>
-    <a href="#">Новая регистрация</a>
-  </form>
+<form class="pop-up login-form visually-hidden" action="https://echo.htmlacademy.ru" method="post">
+  <h4 class="visually-hidden">Окно входа</h4>
+  <p class="pop-up-field">
+    <label class="visually-hidden" for="login-field">Ваш логин:</label>
+    <input id="login-field" type="text" name="login" placeholder="email@example.com">
+  </p>
+  <p class="pop-up-field">
+    <label class="visually-hidden" for="password-field">Ваш пароль:</label>
+    <input id="password-field" type="password" name="password" placeholder="••••••••">
+  </p>
+  <button class="button" type="submit">Войти</button>
+  <a class="underlined-link" href="#">Забыли пароль?<span class="underline"></span></a><br>
+  <a class="underlined-link" href="#">Новая регистрация<span class="underline"></span></a>
+</form>
 
 <!--Временно скрыто Корзина -->
-<section class="pop-up basket-pop-up">
+<section class="pop-up basket-pop-up visually-hidden">
   <h4 class="visually-hidden">Окно корзины</h4>
   <table class="basket-content">
     <tr>
