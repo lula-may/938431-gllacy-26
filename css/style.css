@@ -122,19 +122,19 @@ justify-content: space-between;
 align-items: center;
 }
 
-.catalog-page .main-navigation {
+/* .catalog-page .main-navigation {
   justify-content: flex-start;
-}
+} */
 
 .main-header-logo {
-  width: 155px;
+  width: 154px;
   height: 63px;
   padding-top: 9px;
-  margin-right: 9px;
+  margin-right: 10px;
 }
 
 .catalog-page .main-header-logo {
-  /* margin-right: 10px; */
+  /* width: 157px; */
 }
 
 .site-navigation,
@@ -152,8 +152,8 @@ align-items: center;
   width: 705px;
 }
 
-.catalog-page .site-navigation {
-  width: 690px;
+.catalog-page .site-navigation > li {
+  /* margin-right: 1px; */
 }
 
 .site-navigation > li {
@@ -167,7 +167,9 @@ align-items: center;
   position: relative;
   box-sizing: border-box;
   height: 32px;
-  padding: 8px 14px;
+  padding-top: 9px;
+  padding-left: 14px;
+  padding-right: 14px;
 
   font: inherit;
   color: #ffffff;
@@ -200,7 +202,7 @@ align-items: center;
 .site-navigation > .current > a:focus,
 .site-navigation > .current > a:active {
   border-radius: 20px;
-  background-color: #d07058;
+  /* background-color: #d07058; */
   color: #ffffff;
 }
 
@@ -269,6 +271,7 @@ align-items: center;
   flex-wrap: wrap;
   width: 280px;
   margin-left: auto;
+  padding-top: 4px;
 }
 
 .catalog-page .user-navigation {
@@ -280,13 +283,10 @@ align-items: center;
 }
 
 .user-navigation-button {
-
+  position: relative;
   display: block;
   box-sizing: border-box;
   height: 32px;
-  padding-left: 15px;
-  padding-right: 16px;
-  /* padding-top: 2px; */
 
   font-size: 14px;
   line-height: 16px;
@@ -305,54 +305,58 @@ align-items: center;
   color: #323232;
   background-color: #f8f7f4;
 }
-/*
+
+.user-navigation-button div {
+  position: absolute;
+
+  background-color: tomato;
+}
+
+.user-navigation-button svg {
+  position: absolute;
+}
+
+.search svg {
+  top: 8px;
+  left: 7px;
+  width: 18px;
+  height: 18px;
+}
+
 .user-navigation .search {
   width: 32px;
-
-  padding: 0;
-  padding-top: 2px;
-}
- */
-.user-navigation .search svg {
-  margin: 0;
-  padding: 0;
-  vertical-align: middle;
 }
 
-.user-navigation .search:hover path,
-.user-navigation .search:focus path {
-  fill: #000000;
+.user-navigation .login,
+.user-navigation .basket {
+  padding-top: 3px;
+  padding-right: 16px;
+  padding-left: 45px;
 }
 
-.user-navigation .login svg {
-  margin-right: 5px;
-  vertical-align: middle;
+.basket svg,
+.login svg {
+  top: 6px;
+  left: 16px;
+  width: 22px;
+  height: 22px;
 }
-.user-navigation .login g {
+
+.login g {
   fill: #ffffff;
 }
-
-.user-navigation .login:hover g,
-.user-navigation .login:focus g {
+.search:hover path,
+.search:focus path,
+.search:active path,
+.login:hover g,
+.login:focus g,
+.login:active g,
+.basket:hover g,
+.basket:focus g,
+.basket:active g {
   fill: #000000;
 }
 
-.user-navigation .basket {
-  position: relative;
-  padding-left: 45px;
-  padding-top: 9px;
-}
-/*
-.user-navigation .basket-empty::before {
-  position: absolute;
-  content: "";
-  top: 7px;;
-  left: 16px;
-  width: 23px;
-  height: 23px;
-  background-image: url("../img/basket.svg");
-}
- */
 .user-navigation .basket-not-empty {
   color: #323232;
 
@@ -362,7 +366,7 @@ align-items: center;
 .contacts-info {
   position: absolute;
   right: 26px;;
-  bottom: -46px;
+  bottom: -47px;
   width: 267px;
   margin: 0;
   padding: 0;
@@ -1024,12 +1028,12 @@ align-items: center;
 
 body {
   /* Временно для сетки */
-  /* background-color: transparent;
+  background-color: transparent;
   background-image: url(../img/gllacy-index.jpg);
   background-size: 1200px 2416px;
   background-repeat: no-repeat;
   background-position: top center;
-  min-height: 2416px; */
+  min-height: 2416px;
 
 }
 
@@ -1171,3 +1175,4 @@ body {
 .paginator {
   min-height: 26px;
 }
+
