@@ -559,7 +559,7 @@ align-items: center;
 
 
 .news,
-.subscription,
+.subscription-wrapper,
 .discount-item {
   box-sizing: border-box;
   width: 560px;
@@ -567,9 +567,12 @@ align-items: center;
 }
 
 .news {
+  padding-top: 23px;
+  padding-left: 20px;
+  min-height: 192px;
+
   color: #323232;
 
-  min-height: 220px;
   background-color: #ffffff;
   background-image: url("../img/bg-strawberry.jpg");
   background-repeat: no-repeat;
@@ -577,12 +580,19 @@ align-items: center;
 }
 
 .news h2 {
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 0;
+
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
 }
 
 .news a {
+  display: block;
+  width: 285px;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
@@ -595,7 +605,7 @@ align-items: center;
   color: #e84d37;
 }
 
-.subscription {
+.subscription-wrapper {
   padding: 5px;
 
   background-image: url(../img/bg-post.svg);
@@ -605,8 +615,11 @@ align-items: center;
   background-color: #f8f7f4;
 }
 
-.subscription .wrapper {
-  min-height: 210px;
+.subscription {
+  padding-top: 30px;
+  padding-right: 22px;
+  padding-bottom: 32px;
+  padding-left: 22px;
 
   border-radius: 10px;
   background-color: #f8f7f4;
@@ -614,11 +627,46 @@ align-items: center;
 
 .subscription p {
   margin: 0;
-  padding: 0;
+  margin-bottom: 35px;
 
   font-size: 16px;
   line-height: 22px;
   color: #5a5a5a;
+}
+
+.subscription-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscription-form input {
+  box-sizing: border-box;
+  width: 366px;
+  height: 45px;
+  vertical-align: middle;
+  padding-left: 13px;
+
+  font: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  color: #323232;
+  background-color: #ffffff;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.subscription-form input:hover {
+  border: 2px solid #c7c6c5;
+}
+
+.subscription-form input:focus {
+  border: 2px solid #8fbdec;
+}
+
+.subscription-form .button {
+  padding-top: 8px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .map {
