@@ -88,6 +88,7 @@ img {
 .underlined-link .underline {
   position: absolute;
   left: 0;
+  right: 0;
   bottom: 0;
   height: 1px;
 
@@ -108,10 +109,10 @@ img {
 }
 
 .site-wrapper {
-  /* background-color: #849d8f;
+  background-color: #849d8f;
   background-image: url("../img/slide-1.png");
   background-position: top center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
 }
 
 .main-header {
@@ -207,7 +208,7 @@ align-items: center;
   display: none;
   position: absolute;
   left: -7px;
-  top: 40px;
+  top: 50px;
   width: 145px;
   box-sizing: border-box;
   margin: 0;
@@ -676,10 +677,15 @@ align-items: center;
 }
 
 .map .contacts {
+  display: flex;
+  flex-direction: column;
+
   position: absolute;
   top: 63px;
   right: 27px;
+  box-sizing: border-box;
   width: 302px;
+  padding: 30px 25px;
 
   font-size: 14px;
   line-height: 20px;
@@ -689,10 +695,38 @@ align-items: center;
   background-color: #fefefe;
 }
 
+.contacts p {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
 .contacts b {
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
+}
+
+.contacts .phone {
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 2px;
+}
+
+.contacts .button {
+  margin-top: 3px;
+}
+
+.map .pin {
+  position: absolute;
+  top: 139px;
+  left: 266px;
+  width: 180px;
+  height: 140px;
+
+  background-image: url("../img/pin.svg"),
+                    url("../img/pin-shadow.png");
+  background-position: 0 0, 40px bottom;
+  background-repeat: no-repeat;
 }
 
 /* Стили для страницы каталога */
@@ -1159,12 +1193,12 @@ align-items: center;
 
 body {
   /* Временно для сетки */
-  background-color: transparent;
+  /* background-color: transparent;
   background-image: url(../img/gllacy-index.jpg);
   background-size: 1200px 2416px;
   background-repeat: no-repeat;
   background-position: top center;
-  min-height: 2416px;
+  min-height: 2416px; */
 
 }
 
