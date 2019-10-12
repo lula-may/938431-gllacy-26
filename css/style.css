@@ -480,7 +480,7 @@ align-items: center;
   border-radius: 50%;
 }
 .features {
-  padding: 27px 20px 24px 20px;
+  padding: 23px 20px 16px 20px;
   margin-bottom:40px;
 
   color: #323232;
@@ -494,11 +494,12 @@ align-items: center;
 .features h3 {
   margin: 0;
   padding: 0;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
+  letter-spacing: 0.006em;
 }
 
 .feature-column {
@@ -509,6 +510,47 @@ align-items: center;
 
 .features ul {
   list-style: none;
+}
+
+.feature-column li {
+  position: relative;
+  padding-top: 15px;
+  padding-right: 5px;
+  padding-left: 56px;
+  margin-bottom: 7px;
+}
+
+.feature-column li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+}
+
+.ice-cream::before {
+  background-image: url("../img/ice-cream.svg");
+  background-repeat: no-repeat;
+}
+
+.eco::before {
+  background-image: url("../img/eco.svg");
+  background-repeat: no-repeat;
+}
+
+.cow::before {
+  background-image: url("../img/cow.svg");
+  background-repeat: no-repeat;
+}
+.thermometer::before {
+  background-image: url("../img/thermometer.svg");
+  background-repeat: no-repeat;
+}
+
+
+.feature-column p {
+  margin: 0;
 }
 
 .news-and-subscription {
