@@ -758,19 +758,77 @@ align-items: center;
   list-style: none;
   font-size: 14px;
   line-height: 16px;
+}
 
+.breadcrumbs li {
+  position: relative;
+  padding-right: 21px;
+}
+
+.breadcrumbs li::after {
+  position: absolute;
+  right: 6px;
+  top: 4px;
+  content: "";
+  width: 8px;
+  height: 6px;
+
+  /* background-color: tomato; */
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+
+.breadcrumbs .current::after {
+  display: none;
 }
 
 .filters {
+  display: flex;
+  flex-wrap: wrap;
+  width: 879px;
   margin-bottom: 40px;
+}
+
+.filters .field-name {
+  display: block;
+  margin: 0;
+  margin-bottom: 5px;
+  padding:0;
+  padding-left: 16px;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
 }
 
 .filters .filter {
   margin: 0;
   padding: 0;
+  padding-left: 12px;
+  box-sizing: border-box;
+  height: 36px;
 
   list-style: none;
+
+  border-radius: 18px;
   background-color: rgba(248, 247, 244, 0.2);
+}
+
+.filters .category {
+  position: relative;
+  padding-top: 9px;
+  padding-right: 13px;
+}
+
+.category select {
+  padding-right: 3px;
+}
+
+.category svg {
+  position: absolute;
+  top: 14px;
+  right: 16px;
 }
 
 .filters fieldset {
@@ -779,19 +837,7 @@ align-items: center;
   border: none;
 }
 
-.filter label {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-}
-
-.filters .field-name {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 500;
-}
-
-.filters select  {
+.filter-select  {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -800,23 +846,29 @@ align-items: center;
   background-color: transparent;
 }
 
-.filters select:hover {
+.filter-select:hover {
   color: #323232;
 }
-.filters select:focus,
-.filters select:active {
+
+.filter-select:focus,
+.filter-select:active {
   color: #323232;
 
   outline: none;
-  background-color: #ffffff;
+}
+
+.filter-select:hover ~ svg path,
+.filter-select:focus ~ svg path,
+.filter-select:active ~ svg path {
+  fill: #323232;
 }
 
 .category option {
   font-size: 14px;
   line-height: 16px;
-/*  padding-top: 3px;
+  padding-top: 3px;
   padding-bottom: 3px;
-*/
+
   font-weight: normal;
 }
 
