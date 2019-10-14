@@ -213,6 +213,8 @@ align-items: center;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  z-index: 10;
+
   list-style: none;
 
   border-radius: 5px;
@@ -473,10 +475,13 @@ align-items: center;
 
 .hit-catalog .catalog-item::after {
   content: "";
-  position: absolute;;
   width: 61px;
   height: 61px;
 
+  position: absolute;
+
+  top: 0;
+  left: 0;
   background-image: url("../img/hit.svg");
   border-radius: 50%;
 }
@@ -675,6 +680,13 @@ align-items: center;
   width: 1200px;
   padding: 0;
   margin: 0 auto;
+
+  background-color: #f7f1d9;
+}
+
+.map img {
+  width: 100%;
+  height: auto;
 }
 
 .map .contacts {
@@ -787,15 +799,20 @@ align-items: center;
   display: flex;
   flex-wrap: wrap;
   width: 879px;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
+}
+
+.filters .form-field {
+  margin-right: 16px;
+  margin-bottom: 16px;
 }
 
 .filters .field-name {
   display: block;
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   padding:0;
-  padding-left: 16px;
+  padding-left: 15px;
 
   font-size: 14px;
   line-height: 16px;
@@ -812,29 +829,23 @@ align-items: center;
   list-style: none;
 
   border-radius: 18px;
-  background-color: rgba(248, 247, 244, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .filters .category {
   position: relative;
-  padding-top: 9px;
+  padding-top: 8px;
   padding-right: 13px;
 }
 
 .category select {
-  padding-right: 3px;
+  padding-right: 1px;
 }
 
 .category svg {
   position: absolute;
   top: 14px;
   right: 16px;
-}
-
-.filters fieldset {
-  margin: 0;
-  padding: 0;
-  border: none;
 }
 
 .filter-select  {
@@ -872,8 +883,159 @@ align-items: center;
   font-weight: normal;
 }
 
+.form-field .filter-range {
+  padding: 16px 20px 16px 21px;
+}
+
+.price-range {
+  position: relative;
+  width: 177px;
+  height: 4px;
+
+  background-color: #d1d9d3;
+}
+
+.active-price-range {
+  position: absolute;
+  top: 0;
+  left: 22px;
+  right: 57px;
+  height: 4px;
+  z-index: 2;
+
+  background-color: #f8f7f4;
+}
+
+.price-range .handle {
+  position: absolute;
+  box-sizing: content-box;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  background-color: #ababab;
+  border-radius: 50%;
+  border: 8px solid #ffffff;
+  opacity: 1;
+  z-index: 10;
+}
+
+.handle-left {
+  top: -8px;
+  left: 12px;
+}
+
+.handle-right {
+  top: -8px;
+  right: 47px;
+}
+
+.filters fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form-field ul {
+  display: flex;
+  align-items: center;
+}
+
+.form-field .fat-content {
+  padding-left: 13px;
+}
+.filter li {
+  padding-top: 1px;
+}
+
+.fat-content label {
+  padding-right: 18px;
+  padding-left: 32px;
+  position: relative;
+}
+
+.fat-content label::before {
+  content: "";
+  width: 23px;
+  height: 23px;
+
+  position: absolute;
+  top: -2px;
+  left: 0;
+
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fat-content label::after {
+  display: none;
+  content: "";
+  width: 23px;
+  height: 23px;
+
+  position: absolute;
+  top: -2px;
+  left: 0;
+
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-field .fillers {
+  padding-left: 15px;
+}
+
+.fillers label {
+  padding-right: 20px;
+  padding-left: 33px;
+  position: relative;
+}
+
+.fillers label::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+
+  position: absolute;
+  top: -1px;
+  left: 0;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fillers label::after {
+  display: none;
+  content: "";
+  width: 24px;
+  height: 20px;
+
+  position: absolute;
+  top: -1px;
+  left: 0;
+
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.filter input:checked ~ label::after {
+  display: block;
+}
+
+.filter input:checked ~ label::before {
+  display: none;
+}
+
 .filters .submit-button {
-  /* box-sizing: border-box; */
+  padding-left: 28px;
+  padding-right: 27px;
+  margin-top: 22px;
+
   font: inherit;
   font-size: 16px;
   line-height: 18px;
@@ -912,9 +1074,10 @@ align-items: center;
 .catalog-item {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 267px;
   margin-right: 26px;
-  margin-bottom: 38px;
+  margin-bottom: 37px;
   position: relative;
 
   text-align: center;
@@ -925,9 +1088,10 @@ align-items: center;
 }
 
 .catalog-item h3 {
-  order: 10;
+  order: 2;
+  max-width: 257px;
   margin: 0;
-  margin-top: 8px;
+  margin-top: 6px;
   padding: 0;
 }
 
@@ -936,11 +1100,11 @@ align-items: center;
   padding: 0;
 }
 
-.catalog-item:hover,
+/* .catalog-item:hover,
 .catalog-item:focus {
   background-color: rgba(248, 247, 244, 0.2);
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4)
-}
+} */
 
 .catalog-item a {
   position: relative;
@@ -979,7 +1143,7 @@ align-items: center;
 .catalog-item .price-info {
   position: absolute;
   top: 210px;
-  left: 0;
+  left: -2px;
   font-weight: bold;
 
 }
@@ -996,15 +1160,28 @@ align-items: center;
   text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
 }
 
-.catalog-item .button {
+.catalog-item .preview-button {
   display: none;
+  position: absolute;
+  top: -7px;
+  left: -13px;
+  box-sizing: border-box;
+  width: 293px;
+  height: 405px;
+  padding-top: 340px;
+
+  border-radius: 5px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
-.catalog-item:hover .button {
-  display: inline-block;
+.catalog-item .preview-button {
+  bottom: 10px;
   color: #ffffff;
 }
 
+.catalog-item:hover .preview-button {
+  display: block;
+}
 .paginator {
   margin: 0;
   margin-bottom: 30px;
@@ -1070,6 +1247,7 @@ align-items: center;
 
 .social-links li {
   display: inline-block;
+  vertical-align: top;
   margin-right: 8px;
 }
 
@@ -1313,12 +1491,12 @@ align-items: center;
 
 body {
   /* Временно для сетки */
-  background-color: transparent;
+  /* background-color: transparent;
   background-image: url(../img/gllacy-index.jpg);
   background-size: 1200px 2416px;
   background-repeat: no-repeat;
   background-position: top center;
-  min-height: 2416px;
+  min-height: 2416px; */
 
 }
 
