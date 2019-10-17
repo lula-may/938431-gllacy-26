@@ -219,7 +219,7 @@ align-items: center;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  z-index: 10;
+  z-index: 15;
 
   list-style: none;
 
@@ -256,6 +256,9 @@ align-items: center;
   background-color: #f6b5a5;
 }
 
+.sub-menu .current {
+  background-color: #d07058;
+}
 .sub-menu .line {
   width: 132px;
   height: 1px;
@@ -276,6 +279,7 @@ align-items: center;
 }
 
 .user-navigation li {
+  position: relative;
   vertical-align: middle;
   margin-left: 10px;
 }
@@ -320,7 +324,7 @@ align-items: center;
 }
 
 .search svg {
-  top: 8px;
+  top: 7px;
   left: 7px;
   width: 18px;
   height: 18px;
@@ -332,14 +336,14 @@ align-items: center;
 
 .user-navigation .login,
 .user-navigation .basket {
-  padding-top: 3px;
+  padding-top: 1px;
   padding-right: 16px;
   padding-left: 45px;
 }
 
 .basket svg,
 .login svg {
-  top: 6px;
+  top: 4px;
   left: 16px;
   width: 22px;
   height: 22px;
@@ -418,6 +422,11 @@ align-items: center;
   border-radius: 50%;
   cursor: pointer;
 }
+
+.slider-controls label:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
 .slider-list {
   width: 670px;
 
@@ -466,6 +475,8 @@ align-items: center;
 #page-3:checked ~ .site-wrapper label[for="page-3"] {
   background-color: #ffffff;
 }
+
+
 
 #page-1:checked ~ .site-wrapper {
   background-color: #849d8f;
@@ -809,6 +820,9 @@ align-items: center;
 }
 
 /* Стили для страницы каталога */
+.catalog-page {
+  background-color: #849d8f;
+}
 
 .catalog-page h1 {
   margin: 0;
@@ -1236,7 +1250,7 @@ input[type="checkbox"] + label {
   padding-top: 340px;
 
   border-radius: 5px;
-  background-color: (255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
@@ -1346,7 +1360,8 @@ input[type="checkbox"] + label {
   display: flex;
   justify-content: space-between;
   margin-top: 17px;
-  align-items: top;
+  margin-bottom: 25px;
+  align-items: flex-start;
 }
 
 .main-footer ul {
@@ -1452,7 +1467,8 @@ input[type="checkbox"] + label {
 }
 
 /* Стили для попапов */
-.pop-up {
+.modal {
+  position: absolute;
   box-sizing: border-box;
 
   background-color: #f8f7f4;
@@ -1460,63 +1476,60 @@ input[type="checkbox"] + label {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
-.search-form {
+.user-navigation .modal {
+  top: 35px;
+  right: 0;
+  z-index: 30;
+}
+.modal-search {
   width: 342px;
-  height: 85px;
   padding: 20px 15px;
 }
 
-.login-form {
+.modal-login {
   width: 277px;
-  height: 214px;
-  padding: 20px;
+  padding: 20px 17px 22px 19px;
 }
 
-.login-form .underlined-link {
+.modal-login p {
+  margin: 0;
+  margin-bottom: 19px;
+}
+
+.modal-login div {
+  display: flex;
+  align-items: flex-start;
+}
+
+.modal-login .modal-login-help {
+  margin: 0;
+  margin-left: 20px;
+}
+
+.modal-login a {
+  display: block;
   font-size: 13px;
-  line-height: 24px;
+  line-height: 22px;
   color: #323232;
 }
 
-.login-form a:hover,
-.login-form a:focus,
-.login-form a:active {
+.modal-login a:hover,
+.modal-login a:focus,
+.modal-login a:active {
   color: #e84d37;
 }
 
-.pop-up .underline {
-  background-color: #323232;
-  opacity: 0.3;
-}
-
-.backup-form {
-  width: 478px;
-  height: 442px;
-  padding: 20px 25px 25px 25px;
-}
-
-.backup-form h4 {
-  font-size: 24px;
-  line-height: 28px;
-  color: #323232;
-
-  margin: 0;
-  padding: 0;
-}
-
-.pop-up input[type="text"],
-.pop-up input[type="password"],
-.pop-up textarea {
+.modal input[type="text"],
+.modal input[type="password"],
+.modal textarea {
   box-sizing: border-box;
   width: 100%;
   height: 45px;
   vertical-align: middle;
-  /* padding-top: 9px; */
-  /* padding-bottom: 9px; */
   padding-left: 14px;
 
   font: inherit;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   color: #323232;
 
@@ -1525,65 +1538,94 @@ input[type="checkbox"] + label {
   border-radius: 5px;
 }
 
-.pop-up textarea {
+.modal-feedback {
+  width: 478px;
+  height: 442px;
+  padding: 20px 25px 25px 25px;
+
+  font-size: 16px;
+}
+
+.modal-feedback h4 {
+  font-size: 24px;
+  line-height: 28px;
+  color: #323232;
+
+  margin: 0;
+  padding: 0;
+}
+
+.modal-feedback textarea {
   height: 155px;
 }
 
-.pop-up input[type="text"]:hover,
-.pop-up input[type="password"]:hover,
-.pop-up textarea:hover {
+.modal input[type="text"]:hover,
+.modal input[type="password"]:hover,
+.modal textarea:hover {
   border: 2px solid #c7c6c5;
 }
 
-.pop-up input[type="text"]:focus,
-.pop-up input[type="password"]:focus,
-.pop-up textarea:focus {
+.modal input[type="text"]:focus,
+.modal input[type="password"]:focus,
+.modal textarea:focus {
   border: 2px solid #8fbdec;
 }
 
-.basket-pop-up {
+.modal-basket {
   width: 539px;
-  height: 242px;
   padding-top: 20px;
-  padding-right: 13px;
-  padding-bottom: 20px;
-  padding-left: 20px;
+  padding-right: 14px;
+  padding-bottom: 18px;
+  padding-left: 15px;
 
   font-size: 13px;
   line-height: 16px;
   color: #323232;
+  text-align: right;
+
 }
 
 .basket-content {
+  width: 100%;
+  border-collapse: collapse;
   text-align: left;
   border-bottom: 1px solid grey;
-}
-
-.basket-content tr {
 }
 
 .basket-content td {
   padding: 0;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 26px;
   vertical-align: top;
 }
 
+.basket-item:last-child td {
+  padding-bottom: 15px;
+}
+
 .basket-content td:first-child {
-  width: 22px;
+  width: 20px;
+text-align: center;
 }
 
 .basket-content td:nth-child(2) {
-  width: 46px;
-  vertical-align: middle;
+  position: relative;
+  width: 52px;
+}
+
+.basket-content img {
+  position: absolute;
+  top: 0;
+  left: 5px;
 }
 
 .basket-content td:nth-child(3) {
-  width: 247px;
+  width: 217px;
+  padding-right: 30px;
 }
 
 .basket-content td:nth-child(4) {
-  width: 122px;
+  width: 123px;
 }
 
 .basket-content img {
@@ -1591,6 +1633,21 @@ input[type="checkbox"] + label {
   height: 33px;
 }
 
+.basket-delete-button {
+  padding: 0;
+  width: 12px;
+  height: 12px;
+
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/cross-small.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.basket-delete-button:hover {
+  cursor: pointer;
+}
 .basket-total {
   font-size: 15px;
   line-height: 18px;
@@ -1599,140 +1656,26 @@ input[type="checkbox"] + label {
 }
 /* Стили для сетки */
 
-body {
+/* body { */
   /* Временно для сетки */
   /* background-color: transparent;
   background-image: url(../img/gllacy-index.jpg);
   background-size: 1200px 2416px;
   background-repeat: no-repeat;
   background-position: top center;
-  min-height: 2416px;  */
+  min-height: 2416px;
 
 }
 
 .catalog-page {
     /* Временно для сетки */
     /* background-color: transparent;
-    background-image: url(../img/gllacy-catalog.jpg);
-    background-size: 1200px 1650px;
+    background-image: url(../img/styleguide.jpg);
+    background-size: 1460px 2780px;
     background-repeat: no-repeat;
-    background-position: top center;
-    min-height: 1650px; */
+    background-position: -45px -691px;
 }
-
-
-.main-header {
-  /* Временно для сетки */
-  /* min-height: 73px; */
-}
-
-.catalog-page .main-header {
-  /* Временно для сетки */
-   /* margin-bottom: 0; */
-  }
-
-.main-navigation {
-    /* Временно для сетки */
-     /* min-height: 73px; */
-}
-
-
-.main-navigation ul {
-
-    /* Временно для сетки */
-}
-
-.contacts-info {
-    /* Временно для сетки */
-    /* min-height: 50px; */
-}
-
-.slider {
-  /* Временно для сетки */
-  /* min-height: 535px; */
-}
-
-.discounts {
-   /* Временно для сетки */
-   /* min-height: 230px; */
-}
-
-.discount-item {
-   /* Временно для сетки */
-   /* background: none; */
-}
-
-.hit-catalog {
-  /* min-height: 323px; */
-}
-.features {
-  /* Временно для сетки */
-   /* min-height: 248px; */
-   /* background: none; */
-}
-
-.features h3 {
-  /* Временно для сетки */
-  /* min-height: 60px; */
-}
-
-  .feature-column {
-    /* Временно для сетки */
-     /* min-height: 187px; */
-}
-
-.news-and-subscription {
-    /* Временно для сетки */
-     /* margin-bottom: 468px; */
-}
-.news,
-.subscription {
-    /* Временно для сетки
-     min-height: 222px;
-     background: none; */
-}
-
-.map {
-  /* min-height: 430px; */
-}
-
-.map .contacts {
-  /* min-height: 305px; */
-  /* background: none; */
-}
-.main-footer {
-    /* Временно для сетки */
-      min-height: 90px;
-}
-
-.main-footer .social {
-    /* Временно для сетки
-     min-height: 104px; */
-}
-
-.main-footer .info {
-    /* Временно для сетки
-     min-height: 104px; */
-}
-
-.main-footer .copyright {
-    /* Временно для сетки
-     min-height: 104px; */
-}
-
-.catalog-content {
-  /* Временно для сетки
-   box-sizing: border-box;
-   min-height: 1470px; */
-}
-
-
-.catalog-main-top {
-   /* Временно для сетки
-   min-height: 90px;
-   margin-bottom: 195x; */
-
-}
+ */
 
 
 

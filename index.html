@@ -43,6 +43,11 @@
                   <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
                 </svg>
               </button>
+              <!--  Поле поиска -->
+              <form class="modal modal-search visually-hidden" action="https://echo.htmlacademy.ru" method="get">
+                <label class="visually-hidden" for="search-field">Что ищем?</label>
+                <input id="search-field" type="text" name="search" placeholder="Крем-брюле">
+              </form>
             </li>
             <li>
               <button class="user-navigation-button login" type="button">
@@ -53,6 +58,25 @@
                 </svg>
                 Вход
               </button>
+              <!--  Окно входа -->
+              <form class="modal modal-login visually-hidden" action="https://echo.htmlacademy.ru" method="post">
+                <h4 class="visually-hidden">Окно входа</h4>
+                <p class="modal-field">
+                  <label class="visually-hidden" for="login-field">Ваш логин:</label>
+                  <input id="login-field" type="text" name="login" placeholder="email@example.com">
+                </p>
+                <p class="modal-field">
+                  <label class="visually-hidden" for="password-field">Ваш пароль:</label>
+                  <input id="password-field" type="password" name="password" placeholder="••••••••">
+                </p>
+                <div>
+                  <button class="button" type="submit">Войти</button>
+                  <p class="modal-login-help">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </p>
+                </div>
+              </form>
             </li>
             <li>
               <button class="user-navigation-button basket" aria-label="Корзина">
@@ -125,8 +149,8 @@
                 <div class="preview-button">
                   <a class="button" href="">Быстрый просмотр</a>
                 </div>
-                <h3><a class="underlined-link" href="#">Сливочное с апельсиновым <div class="underline"></div>
-                    джемом и цитусовой стружкой<span class="underline"></span></a>
+                <h3><a href="#">Сливочное с апельсиновым <div class="underline"></div>
+                    джемом и цитусовой стружкой</a>
                 </h3>
                 <a href="#"><img src="img/product-1.png" width="267" height="267"
                     alt="Фото мороженого"></a>
@@ -139,7 +163,7 @@
                 <div class="preview-button">
                   <a class="button" href="">Быстрый просмотр</a>
                 </div>
-                <h3><a class="underlined-link" href="#">Сливочно-кофейное с кусочками шоколада<span class="underline"></span></a>
+                <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a>
                 </h3>
                 <a href="#"><img src="img/product-2.png" width="267" height="267"
                   alt="Фото мороженого"></a>
@@ -152,7 +176,7 @@
                 <div class="preview-button">
                   <a class="button" href="">Быстрый просмотр</a>
                 </div>
-                <h3><a class="underlined-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада<span class="underline"></span></a>
+                <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 </h3>
                 <a href="#"><img src="img/product-3.png" width="267" height="267"
                   alt="Фото мороженого"></a>
@@ -165,9 +189,9 @@
                 <div class="preview-button">
                   <a class="button" href="">Быстрый просмотр</a>
                 </div>
-                <h3><a href="#">Сливочное крем-брюле с карамельной подливкой<span class="underline"></span></a>
+                <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a>
                 </h3>
-                <a class="underlined-link" href="#"><img src="img/product-4.png" width="267" height="267"
+                <a href="#"><img src="img/product-4.png" width="267" height="267"
                     alt="Фото мороженого"></a>
                 <p class="price-info">
                   <span class="rubles">415₽</span>
@@ -310,12 +334,6 @@
             <li><a class="underlined-link" href="#">Экологические стандарты<span class="underline"></span></a></li>
         </ul>
       </div>
-        <!-- <ul class="footer-info">
-            <li><a class="underlined-link" href="#"><b>Для поставщиков</b><span class="underline"></span></a></li>
-            <li><a class="underlined-link" href="#">О производстве<span class="underline"></span></a></li>
-            <li><a class="underlined-link" href="#">Наши документы<span class="underline"></span></a></li>
-            <li><a class="underlined-link" href="#">Экологические стандарты<span class="underline"></span></a></li>
-        </ul> -->
         <div class="copyright">
           <a href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo-htmlacademy.svg" width="110" height="40"
@@ -329,41 +347,20 @@
 
     </div>
 
-    <!--  Поле поиска -->
-      <form class="pop-up search-form visually-hidden" action="https://echo.htmlacademy.ru" method="get">
-        <label class="visually-hidden" for="search-field">Что ищем?</label>
-        <input id="search-field" type="text" name="search" placeholder="Крем-брюле">
-      </form>
-
-    <!--  Окно входа -->
-    <form class="pop-up login-form visually-hidden" action="https://echo.htmlacademy.ru" method="post">
-      <h4 class="visually-hidden">Окно входа</h4>
-      <p class="pop-up-field">
-        <label class="visually-hidden" for="login-field">Ваш логин:</label>
-        <input id="login-field" type="text" name="login" placeholder="email@example.com">
-      </p>
-      <p class="pop-up-field">
-        <label class="visually-hidden" for="password-field">Ваш пароль:</label>
-        <input id="password-field" type="password" name="password" placeholder="••••••••">
-      </p>
-      <button class="button" type="submit">Войти</button>
-      <a class="underlined-link" href="#">Забыли пароль?<span class="underline"></span></a><br>
-      <a class="underlined-link" href="#">Новая регистрация<span class="underline"></span></a>
-    </form>
 
     <!-- Форма обратной связи -->
-    <div class="pop-up backup-form visually-hidden">
+    <div class="modal modal-feedback visually-hidden">
       <form action="https://echo.htmlacademy.ru" method="post">
         <h4>Мы обязательно вам ответим!</h4>
-        <p class="pop-up-field">
+        <p class="modal-field">
           <label class="visually-hidden" for="user-name">Ваше имя:</label>
           <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
         </p>
-        <p class="pop-up-field">
+        <p class="modal-field">
           <label class="visually-hidden" for="user-email">Ваш email:</label>
           <input id="user-email" type="text" name="user-email" placeholder="email@example.com">
         </p>
-        <p class="pop-up-field">
+        <p class="modal-field">
           <label class="visually-hidden" for="comment">Напишите здесь:</label>
           <textarea id="comment" rows="5" cols="40" name="comment" placeholder="В свободной форме"></textarea>
         </p>
