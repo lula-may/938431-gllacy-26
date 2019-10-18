@@ -1280,7 +1280,6 @@ input[type="radio"]:checked + .radio-indicator::after {
 
 .catalog-item .preview-button {
   bottom: 10px;
-  color: #ffffff;
 }
 
 .catalog-item:hover .preview-button,
@@ -1296,6 +1295,11 @@ input[type="radio"]:checked + .radio-indicator::after {
 .catalog-item:hover .price-info,
 .catalog-item:focus .price-info {
   z-index: 20;
+}
+
+.preview-button a:hover,
+.preview-button a:focus {
+  color: #ffffff;
 }
 .paginator {
   display: flex;
