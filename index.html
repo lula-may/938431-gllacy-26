@@ -44,7 +44,7 @@
                 </svg>
               </button>
               <!--  Поле поиска -->
-              <form class="modal modal-search" action="https://echo.htmlacademy.ru" method="get">
+              <form class="modal modal-search visually-hidden" action="https://echo.htmlacademy.ru" method="get">
                 <label class="visually-hidden" for="search-field">Что ищем?</label>
                 <input id="search-field" type="text" name="search" placeholder="Крем-брюле">
               </form>
@@ -59,7 +59,7 @@
                 Вход
               </button>
               <!--  Окно входа -->
-              <form class="modal modal-login" action="https://echo.htmlacademy.ru" method="post">
+              <form class="modal modal-login visually-hidden" action="https://echo.htmlacademy.ru" method="post">
                 <h4 class="visually-hidden">Окно входа</h4>
                 <p class="modal-field">
                   <label class="visually-hidden" for="login-field">Ваш логин:</label>
@@ -270,7 +270,7 @@
         <!-- блок с картой -->
         <section class="map">
           <h2 class="visually-hidden">Как нас найти</h2>
-          <img src="img/map.jpg" width="1200" height="430" alt="Адрес магазина Глейси: ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          <iframe src="https://yandex.ru/map-widget/v1/-/CGDZaCoz" width="1200" height="430" frameborder="1" allowfullscreen="true"></iframe>
           <div class="contacts">
             <p>Адрес главного офиса <br> и офлайн-магазина:<br>
               <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
@@ -280,9 +280,8 @@
               <b class="phone">8 812 450-25-25</b>
               (с 10 до 20 ежедневно)
             </p>
-            <button class="button" type="button">Форма обратной связи</button>
+            <button class="button button-feedback-open" type="button">Форма обратной связи</button>
           </div>
-          <div class="pin"></div>
         </section>
       </main>
 
@@ -347,6 +346,7 @@
     </div>
 
     <!-- Форма обратной связи -->
+    <div class="feedback-overlay visually-hidden"></div>
     <div class="modal modal-feedback visually-hidden">
       <form action="https://echo.htmlacademy.ru" method="post">
         <h4>Мы обязательно вам ответим!</h4>
@@ -366,5 +366,8 @@
       </form>
       <button class="close-button" type="button" aria-label="Закрыть"></button>
     </div>
+    <script src="js/search.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/feedback.js"></script>
   </body>
 </html>
