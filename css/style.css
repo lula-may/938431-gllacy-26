@@ -803,6 +803,10 @@ align-items: center;
   height: 430px;
 }
 
+.map iframe {
+  border: none;
+  width: 100%;
+}
 /* .map .pin {
   position: absolute;
   top: 139px;
