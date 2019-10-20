@@ -1181,7 +1181,7 @@ input[type="radio"]:checked + .radio-indicator::after {
   color: #323232;
 
   outline: none;
-  border: none;
+  border: 2px solid #eaeaea;
   background-color: #eaeaea;
   box-shadow: inset 0 2px 1px rgba(105, 105, 105, 0.004);
 }
