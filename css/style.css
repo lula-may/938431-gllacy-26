@@ -390,6 +390,10 @@ align-items: center;
 .contacts-info .phone {
   font-size: 22px;
   line-height: 28px;
+  text-decoration: none;
+  color: #ffffff;
+
+  cursor: pointer;
 }
 
 .slider {
