@@ -86,7 +86,6 @@ img {
   color: #ffbc9e;
 }
 
-
 .underlined-link .underline {
   position: absolute;
   left: 0;
@@ -477,8 +476,6 @@ align-items: center;
   background-color: #ffffff;
 }
 
-
-
 #page-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/slide-1.png");
@@ -623,11 +620,11 @@ align-items: center;
   background-image: url("../img/cow.svg");
   background-repeat: no-repeat;
 }
+
 .thermometer::before {
   background-image: url("../img/thermometer.svg");
   background-repeat: no-repeat;
 }
-
 
 .feature-column p {
   margin: 0;
@@ -636,7 +633,6 @@ align-items: center;
 .news-and-subscription {
   margin-bottom: 40px;
 }
-
 
 .news,
 .subscription-wrapper,
@@ -1593,7 +1589,6 @@ input[type="radio"]:checked + .radio-indicator::after {
 
   background-color: rgba(0, 0, 0, 0.3);
 }
-
 
 .modal-feedback {
   position: fixed;
