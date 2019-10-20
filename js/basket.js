@@ -1,7 +1,12 @@
 var basket = document.querySelector(".user-navigation .basket-not-empty");
 var popupBasket = document.querySelector(".modal-basket");
 
-basket.addEventListener("click", function(evt) {
+basket.addEventListener("mouseenter", function(evt) {
+  evt.preventDefault();
+  popupBasket.classList.toggle("visually-hidden");
+});
+
+popupBasket.addEventListener("mouseleave", function(evt) {
   evt.preventDefault();
   popupBasket.classList.toggle("visually-hidden");
 });

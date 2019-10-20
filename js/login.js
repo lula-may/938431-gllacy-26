@@ -3,7 +3,7 @@ var popupLogin = document.querySelector(".modal-login");
 var login = popupLogin.querySelector("[name=login]");
 var password = popupLogin.querySelector("[name=password]");
 
-loginButton.addEventListener("click", function(evt) {
+loginButton.addEventListener("mouseenter", function(evt) {
   evt.preventDefault();
   popupLogin.classList.toggle("visually-hidden");
   login.focus();

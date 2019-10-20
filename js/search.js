@@ -2,7 +2,12 @@ var search = document.querySelector(".user-navigation .search");
 var popupSearch = document.querySelector(".modal-search");
 var searchForm = popupSearch.querySelector(".form");
 
-search.addEventListener("click", function(evt) {
+search.addEventListener("mouseenter", function(evt) {
+  evt.preventDefault();
+  popupSearch.classList.toggle("visually-hidden");
+});
+
+popupSearch.addEventListener("mouseleave", function(evt) {
   evt.preventDefault();
   popupSearch.classList.toggle("visually-hidden");
 });
