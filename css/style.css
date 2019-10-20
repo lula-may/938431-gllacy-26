@@ -1242,6 +1242,8 @@ input[type="radio"]:checked + .radio-indicator::after {
   left: -2px;
 
   font-weight: bold;
+
+  cursor: default;
 }
 
 .price-info .rubles {
