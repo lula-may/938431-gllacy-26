@@ -1504,6 +1504,10 @@ input[type="radio"]:checked + .radio-indicator::after {
   display: block;
 }
 
+.user-navigation-button:focus + .modal {
+  display: block;
+}
+
 .modal-search {
   width: 342px;
   padding: 20px 15px;
