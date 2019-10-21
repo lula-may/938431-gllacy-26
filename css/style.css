@@ -106,6 +106,7 @@ img {
 
 .columns {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -281,7 +282,8 @@ align-items: center;
   position: relative;
   vertical-align: middle;
   margin-left: 9px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+  padding-top: 5px;
 }
 
 .user-navigation li:first-child {
@@ -501,14 +503,11 @@ align-items: center;
   background-repeat: no-repeat;
 }
 
-.discounts {
-  margin-bottom: 40px;
-}
-
 .discount-item {
   display: flex;
   flex-direction: column;
   padding: 16px 21px 24px 19px;
+  margin-bottom: 40px;
 }
 .discount-item h3 {
   margin: 0;
@@ -811,18 +810,6 @@ align-items: center;
   border: none;
   width: 100%;
 }
-/* .map .pin {
-  position: absolute;
-  top: 139px;
-  left: 266px;
-  width: 180px;
-  height: 140px;
-
-  background-image: url("../img/pin.svg"),
-                    url("../img/pin-shadow.png");
-  background-position: 0 0, 40px bottom;
-  background-repeat: no-repeat;
-} */
 
 /* Стили для страницы каталога */
 .catalog-page {
@@ -1226,8 +1213,6 @@ input[type="radio"]:checked + .radio-indicator::after {
 }
 
 .catalog-item a {
-  position: relative;
-
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
@@ -1238,6 +1223,11 @@ input[type="radio"]:checked + .radio-indicator::after {
 .catalog-item a:focus,
 .catalog-item a:active {
   color: #ffbc9e;
+}
+
+.catalog-item img {
+  width: 267px;
+  height: 267px;
 }
 
 .catalog-item .price-info {
@@ -1266,19 +1256,20 @@ input[type="radio"]:checked + .radio-indicator::after {
   display: none;
   position: absolute;
   top: -7px;
+  bottom: -75px;
   left: -13px;
   box-sizing: border-box;
   width: 293px;
-  height: 405px;
-  padding-top: 340px;
 
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
-.catalog-item .preview-button {
-  bottom: 10px;
+.preview-button .button {
+  position: absolute;
+  left: 46px;
+  bottom: 20px;
 }
 
 .catalog-item:hover .preview-button,
@@ -1501,46 +1492,27 @@ input[type="radio"]:checked + .radio-indicator::after {
   border-radius: 5px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
-
 .user-navigation .modal {
-  top: 35px;
+  display: none;
+  top: 40px;
   right: 0;
   z-index: 30;
 }
+
+.user-navigation li:hover .modal,
+.user-navigation li:focus .modal {
+  display: block;
+}
+
 .modal-search {
   width: 342px;
   padding: 20px 15px;
 }
 
-@keyframes shake {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translateX(-10px);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translateX(10px);
-  }
-}
 
 .modal-login {
   width: 277px;
   padding: 20px 17px 22px 19px;
-}
-
-.modal-error {
-  animation: shake 0.6s;
 }
 
 .modal-login p {
@@ -1600,6 +1572,28 @@ input[type="radio"]:checked + .radio-indicator::after {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal-feedback {
   position: fixed;
   top: 75px;
@@ -1612,6 +1606,10 @@ input[type="radio"]:checked + .radio-indicator::after {
   text-align: right;
 
   border-radius: 10px;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-feedback form {
@@ -1766,7 +1764,4 @@ text-align: center;
   font-weight: bold;
   text-align: right;
 }
-
-
-
 
