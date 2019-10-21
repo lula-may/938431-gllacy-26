@@ -41,7 +41,7 @@
               </svg>
             </button>
             <!-- Поле поиска -->
-            <form class="modal modal-search visually-hidden" action="https://echo.htmlacademy.ru" method="get">
+            <form class="modal modal-search" action="https://echo.htmlacademy.ru" method="get">
               <label class="visually-hidden" for="search-field">Что ищем?</label>
               <input id="search-field" type="text" name="search" placeholder="Крем-брюле">
             </form>
@@ -56,7 +56,7 @@
               Вход
             </button>
             <!-- Окно входа -->
-            <form class="modal modal-login visually-hidden" action="https://echo.htmlacademy.ru" method="post">
+            <form class="modal modal-login" action="https://echo.htmlacademy.ru" method="post">
               <h4 class="visually-hidden">Окно входа</h4>
               <p class="modal-field">
                 <label class="visually-hidden" for="login-field">Ваш логин:</label>
@@ -85,8 +85,8 @@
               </svg>
               <span>2 товара</span>
             </button>
-            <!--Временно скрыто Корзина -->
-            <section class="modal modal-basket visually-hidden">
+            <!-- Корзина -->
+            <div class="modal modal-basket">
               <h4 class="visually-hidden">Окно корзины</h4>
               <table class="basket-content">
                 <tr class="basket-item">
@@ -106,7 +106,7 @@
               </table>
               <p class="basket-total"><b>Итого: 750 руб.</b></p>
               <button class="button" type="button">Оформить заказ</button>
-            </section>
+            </div>
           </li>
         </ul>
       </nav>
@@ -458,9 +458,6 @@
       </p>
     </div>
   </footer>
-  <script src="js/search.js"></script>
-  <script src="js/login.js"></script>
-  <script src="js/basket.js"></script>
 </body>
 </html>
 
