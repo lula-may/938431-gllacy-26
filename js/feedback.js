@@ -2,8 +2,8 @@ var openModal = document.querySelector(".button-feedback-open");
 var overlay = document.querySelector(".feedback-overlay");
 var form = document.querySelector(".modal-feedback");
 var close = form.querySelector(".close-button");
-var name = document.querySelector("[name=user-name]");
-var email = document.querySelector("[name=user-email]");
+var name = form.querySelector("[name=user-name]");
+var email = form.querySelector("[name=user-email]");
 
 openModal.addEventListener("click", function(evt) {
   evt.preventDefault();
@@ -16,7 +16,7 @@ form.addEventListener("submit", function(evt) {
   if ( !name.value || !email.value) {
     evt.preventDefault();
     form.classList.remove("modal-error");
-    form.offsetWidth = popupLogin.offsetWidth;
+    form.offsetWidth = form.offsetWidth;
     form.classList.add("modal-error");
   }
 });
