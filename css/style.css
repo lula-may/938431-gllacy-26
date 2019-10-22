@@ -385,6 +385,7 @@ align-items: center;
 }
 
 .contacts-info .working-hours {
+  display: block;
   font-size: 14px;
   line-height: 16px;
 }
