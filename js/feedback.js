@@ -2,14 +2,14 @@ var openModal = document.querySelector(".button-feedback-open");
 var overlay = document.querySelector(".feedback-overlay");
 var form = document.querySelector(".modal-feedback");
 var close = form.querySelector(".close-button");
-var name = form.querySelector("[name=user-name]");
+var userName = form.querySelector("[name=user-name]");
 var email = form.querySelector("[name=user-email]");
 
 openModal.addEventListener("click", function(evt) {
   evt.preventDefault();
   overlay.classList.toggle("visually-hidden");
   form.classList.toggle("visually-hidden");
-  name.focus();
+  userName.focus();
 });
 
 form.addEventListener("submit", function(evt) {
