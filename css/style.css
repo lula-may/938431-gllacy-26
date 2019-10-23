@@ -189,9 +189,10 @@ align-items: center;
 
 .menu-link:hover,
 .menu-link:focus {
+  color: #323232;
+
   border-radius: 20px;
   background-color: #f7f6f3;
-  color: #323232;
 }
 
 .menu-link:active {
@@ -244,6 +245,7 @@ align-items: center;
   padding-left: 20px;
   padding-top: 9px;
   padding-bottom: 9px;
+
   font: inherit;
   font-size: 14px;
   line-height: 16px;
@@ -321,17 +323,6 @@ align-items: center;
   background-color: #f8f7f4;
 }
 
-.user-navigation-button svg {
-  position: absolute;
-}
-
-.search svg {
-  top: 7px;
-  left: 7px;
-  width: 18px;
-  height: 18px;
-}
-
 .user-navigation .search {
   width: 32px;
 }
@@ -341,6 +332,17 @@ align-items: center;
   padding-top: 1px;
   padding-right: 16px;
   padding-left: 45px;
+}
+
+.user-navigation-button svg {
+  position: absolute;
+}
+
+.search svg {
+  top: 7px;
+  left: 7px;
+  width: 18px;
+  height: 18px;
 }
 
 .basket svg,
@@ -568,6 +570,7 @@ align-items: center;
   background-image: url("../img/hit.svg");
   border-radius: 50%;
 }
+
 .features {
   padding: 23px 20px 16px 20px;
   margin-bottom:42px;
@@ -822,6 +825,7 @@ align-items: center;
 }
 
 /* Стили для страницы каталога */
+
 .catalog-page {
   background-color: #849d8f;
 }
@@ -1032,6 +1036,7 @@ align-items: center;
 .form-field .fat-content {
   padding-left: 13px;
 }
+
 .filter li {
   padding-top: 1px;
 }
@@ -1257,6 +1262,7 @@ input[type="radio"]:checked + .radio-indicator::after {
 .price-info .kilo {
   font-size: 30px;
   line-height: 45px;
+
   text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
 }
 
@@ -1372,7 +1378,7 @@ input[type="radio"]:checked + .radio-indicator::after {
 }
 
 .paginator .disabled {
-  opacity: 0.2;
+  opacity: 0.3;
 }
 
 .white-line {
@@ -1495,6 +1501,7 @@ input[type="radio"]:checked + .radio-indicator::after {
 }
 
 /* Стили для попапов */
+
 .modal {
   position: absolute;
   box-sizing: border-box;
@@ -1504,18 +1511,14 @@ input[type="radio"]:checked + .radio-indicator::after {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
-.user-navigation .modal {
+.user-navigation-item .modal {
   display: none;
   top: 40px;
   right: 0;
   z-index: 30;
 }
 
-.user-navigation li:hover .modal,
-.user-navigation li:focus .modal {
-  display: block;
-}
-
+.user-navigation-item:hover .modal,
 .user-navigation-button:focus + .modal {
   display: block;
 }
@@ -1712,8 +1715,10 @@ input[type="radio"]:checked + .radio-indicator::after {
 
 .basket-content {
   width: 100%;
-  border-collapse: collapse;
+
   text-align: left;
+
+  border-collapse: collapse;
   border-bottom: 1px solid #849d8f;
 }
 
@@ -1721,6 +1726,7 @@ input[type="radio"]:checked + .radio-indicator::after {
   padding: 0;
   padding-top: 10px;
   padding-bottom: 26px;
+
   vertical-align: top;
 }
 
@@ -1730,6 +1736,7 @@ input[type="radio"]:checked + .radio-indicator::after {
 
 .basket-content td:first-child {
   width: 20px;
+
   text-align: center;
 }
 
